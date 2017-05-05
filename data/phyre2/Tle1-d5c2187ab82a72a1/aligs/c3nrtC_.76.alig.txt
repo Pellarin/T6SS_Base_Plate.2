@@ -1,0 +1,14 @@
+76 c3nrtC_ Probab=13.84   E-value=1.1e+02  Score=12.20  Aligned_columns=30  Identities=23%
+
+Q ss_pred             HHCCCCCCCCCCCCCCCCCCHHHHHHHHHH
+Q ss_conf             985985532234573555857899999999
+Q ffff_____       429 QEAGVLFEPIRQTNTELQLPSELIFLADKA  458 (566)
+Q Consensus       429 ~~aGV~f~~i~~~~~~~~lP~eL~~i~~~~  458 (566)
+                      ++.-..|.|-+..-+...||.+|+.+.+++
+T Consensus         1 ~~~~~~y~P~PvD~s~v~Lp~~l~~~~e~l   30 (99)
+T c3nrtC_           1 KENKLDYIPEPXDLSLVDLPESLIQLSERI   30 (99)
+T ss_dssp             CCCSCCCCCCCCCCTTCCCCHHHHTTHHHH
+T ss_pred             CCCCCCCCCCCCCCCCCCCCHHHHHHHHHH
+T ss_conf             977658788997521123088999999999
+
+

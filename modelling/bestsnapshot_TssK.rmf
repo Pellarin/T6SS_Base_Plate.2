@@ -1,0 +1,661 @@
+Objavro.codecnullavro.schema‚¸{
+    "type": "record",
+    "name": "Frame",
+    "fields": [
+        {
+            "name": "info",
+            "type": [
+                {
+                    "type": "record",
+                    "name": "FrameInfo",
+                    "fields": [
+                        {
+                            "name": "id",
+                            "type": "int"
+                        },
+                        {
+                            "name": "name",
+                            "type": "string"
+                        },
+                        {
+                            "name": "type",
+                            "type": "int"
+                        },
+                        {
+                            "name": "parents",
+                            "type": {
+                                "type": "array",
+                                "items": "int"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "record",
+                    "name": "FileInfo",
+                    "fields": [
+                        {
+                            "name": "description",
+                            "type": "string"
+                        },
+                        {
+                            "name": "producer",
+                            "type": "string"
+                        },
+                        {
+                            "name": "categories",
+                            "type": {
+                                "type": "array",
+                                "items": {
+                                    "type": "record",
+                                    "name": "Label",
+                                    "fields": [
+                                        {
+                                            "name": "id",
+                                            "type": "int"
+                                        },
+                                        {
+                                            "name": "name",
+                                            "type": "string"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "name": "node_types",
+                            "type": {
+                                "type": "array",
+                                "items": "Label"
+                            }
+                        },
+                        {
+                            "name": "frame_types",
+                            "type": {
+                                "type": "array",
+                                "items": "Label"
+                            }
+                        },
+                        {
+                            "name": "node_sets",
+                            "type": {
+                                "type": "array",
+                                "items": {
+                                    "type": "record",
+                                    "name": "NodeSet",
+                                    "fields": [
+                                        {
+                                            "name": "id",
+                                            "type": "int"
+                                        },
+                                        {
+                                            "name": "nodes",
+                                            "type": {
+                                                "type": "array",
+                                                "items": "int"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "nodes",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "name": "Node",
+                    "fields": [
+                        {
+                            "name": "id",
+                            "type": "int"
+                        },
+                        {
+                            "name": "name",
+                            "type": "string"
+                        },
+                        {
+                            "name": "type",
+                            "type": "int"
+                        },
+                        {
+                            "name": "parents",
+                            "type": {
+                                "type": "array",
+                                "items": "int"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "keys",
+            "type": {
+                "type": "array",
+                "items": {
+                    "type": "record",
+                    "name": "KeyInfo",
+                    "fields": [
+                        {
+                            "name": "id",
+                            "type": "int"
+                        },
+                        {
+                            "name": "name",
+                            "type": "string"
+                        },
+                        {
+                            "name": "category",
+                            "type": "int"
+                        },
+                        {
+                            "name": "type",
+                            "type": {
+                                "type": "enum",
+                                "name": "Type",
+                                "symbols": [
+                                    "INT",
+                                    "FLOAT",
+                                    "STRING",
+                                    "INTS",
+                                    "FLOATS",
+                                    "STRINGS",
+                                    "VECTOR3",
+                                    "VECTOR4",
+                                    "VECTOR3S"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "data",
+            "type": {
+                "type": "record",
+                "name": "TypeDatas",
+                "fields": [
+                    {
+                        "name": "int_data",
+                        "type": {
+                            "type": "array",
+                            "items": {
+                                "type": "record",
+                                "name": "IntNodeData",
+                                "fields": [
+                                    {
+                                        "name": "key",
+                                        "type": "int"
+                                    },
+                                    {
+                                        "name": "values",
+                                        "type": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "record",
+                                                "name": "IntValue",
+                                                "fields": [
+                                                    {
+                                                        "name": "id",
+                                                        "type": "int"
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "type": "int"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "name": "float_data",
+                        "type": {
+                            "type": "array",
+                            "items": {
+                                "type": "record",
+                                "name": "FloatNodeData",
+                                "fields": [
+                                    {
+                                        "name": "key",
+                                        "type": "int"
+                                    },
+                                    {
+                                        "name": "values",
+                                        "type": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "record",
+                                                "name": "FloatValue",
+                                                "fields": [
+                                                    {
+                                                        "name": "id",
+                                                        "type": "int"
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "type": "float"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "name": "string_data",
+                        "type": {
+                            "type": "array",
+                            "items": {
+                                "type": "record",
+                                "name": "StringNodeData",
+                                "fields": [
+                                    {
+                                        "name": "key",
+                                        "type": "int"
+                                    },
+                                    {
+                                        "name": "values",
+                                        "type": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "record",
+                                                "name": "StringValue",
+                                                "fields": [
+                                                    {
+                                                        "name": "id",
+                                                        "type": "int"
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "type": "string"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "name": "vector3_data",
+                        "type": {
+                            "type": "array",
+                            "items": {
+                                "type": "record",
+                                "name": "Vector3NodeData",
+                                "fields": [
+                                    {
+                                        "name": "key",
+                                        "type": "int"
+                                    },
+                                    {
+                                        "name": "values",
+                                        "type": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "record",
+                                                "name": "Vector3Value",
+                                                "fields": [
+                                                    {
+                                                        "name": "id",
+                                                        "type": "int"
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "type": {
+                                                            "type": "record",
+                                                            "name": "Vector3",
+                                                            "fields": [
+                                                                {
+                                                                    "name": "x",
+                                                                    "type": "float"
+                                                                },
+                                                                {
+                                                                    "name": "y",
+                                                                    "type": "float"
+                                                                },
+                                                                {
+                                                                    "name": "z",
+                                                                    "type": "float"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "name": "vector4_data",
+                        "type": {
+                            "type": "array",
+                            "items": {
+                                "type": "record",
+                                "name": "Vector4NodeData",
+                                "fields": [
+                                    {
+                                        "name": "key",
+                                        "type": "int"
+                                    },
+                                    {
+                                        "name": "values",
+                                        "type": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "record",
+                                                "name": "Vector4Value",
+                                                "fields": [
+                                                    {
+                                                        "name": "id",
+                                                        "type": "int"
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "type": {
+                                                            "type": "record",
+                                                            "name": "Vector4",
+                                                            "fields": [
+                                                                {
+                                                                    "name": "w",
+                                                                    "type": "float"
+                                                                },
+                                                                {
+                                                                    "name": "x",
+                                                                    "type": "float"
+                                                                },
+                                                                {
+                                                                    "name": "y",
+                                                                    "type": "float"
+                                                                },
+                                                                {
+                                                                    "name": "z",
+                                                                    "type": "float"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "name": "ints_data",
+                        "type": {
+                            "type": "array",
+                            "items": {
+                                "type": "record",
+                                "name": "IntsNodeData",
+                                "fields": [
+                                    {
+                                        "name": "key",
+                                        "type": "int"
+                                    },
+                                    {
+                                        "name": "values",
+                                        "type": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "record",
+                                                "name": "IntsValue",
+                                                "fields": [
+                                                    {
+                                                        "name": "key",
+                                                        "type": "int"
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "type": {
+                                                            "type": "array",
+                                                            "items": "int"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "name": "floats_data",
+                        "type": {
+                            "type": "array",
+                            "items": {
+                                "type": "record",
+                                "name": "FloatsNodeData",
+                                "fields": [
+                                    {
+                                        "name": "id",
+                                        "type": "int"
+                                    },
+                                    {
+                                        "name": "values",
+                                        "type": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "record",
+                                                "name": "FloatsValue",
+                                                "fields": [
+                                                    {
+                                                        "name": "id",
+                                                        "type": "int"
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "type": {
+                                                            "type": "array",
+                                                            "items": "float"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "name": "strings_data",
+                        "type": {
+                            "type": "array",
+                            "items": {
+                                "type": "record",
+                                "name": "StringsNodeData",
+                                "fields": [
+                                    {
+                                        "name": "id",
+                                        "type": "int"
+                                    },
+                                    {
+                                        "name": "values",
+                                        "type": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "record",
+                                                "name": "StringsValue",
+                                                "fields": [
+                                                    {
+                                                        "name": "id",
+                                                        "type": "int"
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "type": {
+                                                            "type": "array",
+                                                            "items": "string"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "name": "vector3s_data",
+                        "type": {
+                            "type": "array",
+                            "items": {
+                                "type": "record",
+                                "name": "Vector3sNodeData",
+                                "fields": [
+                                    {
+                                        "name": "key",
+                                        "type": "int"
+                                    },
+                                    {
+                                        "name": "values",
+                                        "type": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "record",
+                                                "name": "Vector3sValue",
+                                                "fields": [
+                                                    {
+                                                        "name": "id",
+                                                        "type": "int"
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "type": {
+                                                            "type": "array",
+                                                            "items": "Vector3"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "name": "vector4s_data",
+                        "type": {
+                            "type": "array",
+                            "items": {
+                                "type": "record",
+                                "name": "Vector4sNodeData",
+                                "fields": [
+                                    {
+                                        "name": "key",
+                                        "type": "int"
+                                    },
+                                    {
+                                        "name": "values",
+                                        "type": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "record",
+                                                "name": "Vector4sValue",
+                                                "fields": [
+                                                    {
+                                                        "name": "id",
+                                                        "type": "int"
+                                                    },
+                                                    {
+                                                        "name": "value",
+                                                        "type": {
+                                                            "type": "array",
+                                                            "items": "Vector4"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
+ t¤©¿d9jÎE¿´Ì‡³®ìŽ	 &IMP develop-5a48624IMP
+alias alternativesfeaturephysicssequence
+
+shape    ® root  System  State_0 TssF Frag_1-595 
+>Frag_1-595: Res 20 Densities 20 1-20_bead
+ 21-40_bead
+ 41-60_bead
+ 61-80_bead
+ 81-100_bead
+ 101-120_bead
+ 121-140_bead
+ 141-160_bead
+ 161-180_bead
+ 181-200_bead
+  201-220_bead
+ "221-240_bead
+ $241-260_bead
+ &261-280_bead
+ (281-300_bead
+ *301-320_bead
+ ,321-340_bead
+ .341-360_bead
+ 0361-380_bead
+ 2381-400_bead
+ 4401-420_bead
+ 6421-440_bead
+ 8441-460_bead
+ :461-480_bead
+ <481-500_bead
+ >501-520_bead
+ @521-540_bead
+ B541-560_bead
+ D561-580_bead
+ F581-595_bead
+ HTssF JFrag_1-595H L>Frag_1-595: Res 20 Densities 20J N1-20_beadL P21-40_beadL R41-60_beadL T61-80_beadL V81-100_beadL X101-120_beadL Z121-140_beadL \141-160_beadL ^161-180_beadL `181-200_beadL b201-220_beadL d221-240_beadL f241-260_beadL h261-280_beadL j281-300_beadL l301-320_beadL n321-340_beadL p341-360_beadL r361-380_beadL t381-400_beadL v401-420_beadL x421-440_beadL z441-460_beadL |461-480_beadL ~481-500_beadL €501-520_beadL ‚521-540_beadL „541-560_beadL †561-580_beadL ˆ581-595_beadL Š
+bonds ŒbondŠ ŽbondŠ bondŠ ’bondŠ ”bondŠ –bondŠ ˜bondŠ šbondŠ œbondŠ žbondŠ  bondŠ ¢bondŠ ¤bondŠ ¦bondŠ ¨bondŠ ªbondŠ ¬bondŠ ®bondŠ °bondŠ ²bondŠ ´bondŠ ¶bondŠ ¸bondŠ ºbondŠ ¼bondŠ ¾bondŠ ÀbondŠ ÂbondŠ ÄbondŠ ÆbondŠ ÈbondŠ ÊbondŠ ÌbondŠ ÎbondŠ ÐbondŠ ÒbondŠ ÔbondŠ ÖbondŠ ØbondŠ ÚbondŠ ÜbondŠ ÞbondŠ àbondŠ âbondŠ äbondŠ æbondŠ èbondŠ êbondŠ ìbondŠ îbondŠ ðbondŠ òbondŠ ôbondŠ öbondŠ øbondŠ úbondŠ übondŠ þbondŠ €.linear_dummy_restraints  ‚ú|0.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGE.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|€ „â|10.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ †ì|100.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|525|€ ˆä|100.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ Šê|100.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|387|€ Œì|101.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|227|TssF|455|€ Žæ|101.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ è|102.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|€ ’ì|102.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|49|€ ”ê|103.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|387|€ –ì|107.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.3|TssF|203|TssF|586|€ ˜î|108.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|€ šâ|11.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ œî|110.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|227|TssF|455|€ žæ|111.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€  æ|111.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ ¢è|112.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|€ ¤æ|112.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|23|€ ¦ä|113.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ ¨è|114.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|3|€ ªè|114.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|3|€ ¬ì|115.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|46|TssF|394|€ ®ì|115.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|€ °è|116.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|€ ²î|117.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|€ ´î|117.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|€ ¶è|118.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|493|€ ¸â|12.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ ºè|120.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|493|€ ¼ì|120.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|49|€ ¾ì|120.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|449|€ Àæ|123.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|23|€ Âê|124.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|387|€ Äè|124.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|387|€ Ææ|124.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ Èì|126.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|€ Êì|127.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|€ Ìì|127.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|49|€ Îî|128.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|525|€ Ðì|129.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|46|TssF|394|€ Òâ|13.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ Ôä|13.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ Öæ|131.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ Øì|131.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|525|€ Úê|132.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|49|€ Üä|133.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ Þî|133.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|525|€ àî|133.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|493|TssF|381|€ âî|135.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|449|€ äè|138.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|387|€ ææ|138.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ èè|138.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|493|€ êî|138.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|525|TssF|586|€ ìì|139.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|525|€ îê|139.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|381|€ ðî|140.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|525|TssF|586|€ òè|140.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|23|€ ôì|141.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|455|€ öì|142.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|525|€ øè|143.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|23|€ úê|144.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|23|€ üè|145.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|13|€ þê|146.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|23|€ €ì|147.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|525|TssF|586|€ ‚î|148.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|525|TssF|586|€ „ê|149.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|493|€ †ê|149.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|49|€ ˆî|149.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|525|€ Šâ|15.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ Œè|150.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|29|€ Žì|153.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|381|€ ì|154.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|162|€ ’î|155.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|381|€ ”î|155.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|381|€ –ì|157.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|€ ˜ì|157.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|586|€ šê|158.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|46|TssF|391|€ œæ|158.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ žè|161.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|434|€  ê|161.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|493|€ ¢ê|165.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|493|€ ¤è|166.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|€ ¦è|168.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|387|€ ¨ê|168.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|387|€ ªì|169.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|381|€ ¬ô|18.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFG.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|3|€ ®ê|188.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|49|€ °ä|19.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ ²â|19.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ ´æ|194.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|23|€ ¶ä|197.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ ¸è|198.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|387|€ ºø|20.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGVE.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|3|€ ¼ä|20.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ ¾ö|21.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFG.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|340|TssF|3|€ Àâ|21.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ Âì|22.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|€ Äì|224.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|525|€ Æì|229.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|€ Èä|230.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ Êì|231.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|525|TssF|586|€ Ìê|234.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|387|€ Îè|235.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|381|€ Ðú|24.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGVE.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|340|TssF|3|€ Òì|244.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|381|€ Ôè|248.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|387|€ Öä|25.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ Øì|26.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|455|€ Úì|27.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|455|€ Üà|3.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ Þà|3.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ àâ|30.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ âä|30.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ ää|30.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ æö|31.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGE.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|3|€ èê|31.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|€ êô|33.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFG.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|3|€ ìâ|34.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ îä|34.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ ðì|35.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|455|€ òö|36.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGE.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|94|TssF|3|€ ôâ|36.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ öä|37.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ øö|38.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGV.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|3|€ úì|39.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|€ üâ|4.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ þì|40.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|€ €ä|40.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ ‚ø|41.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGVE.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|3|€ „ô|42.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFG.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|94|TssF|3|€ †ø|42.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGVE.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|94|TssF|3|€ ˆä|44.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|€ Šè|44.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|€ Œä|44.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|€ Žø|45.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGE.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|340|TssF|3|€ ì|45.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|435|TssF|455|€ ’ê|45.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|455|€ ”ä|47.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|€ –æ|49.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|€ ˜ä|50.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ šè|51.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|€ œè|51.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|493|€ žê|52.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|203|TssF|586|€  ê|55.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|€ ¢ä|55.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|€ ¤ä|57.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ ¦æ|58.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|€ ¨ä|58.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|€ ªæ|59.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|€ ¬â|59.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ ®ì|59.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|227|TssF|455|€ °ì|60.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|197|TssF|586|€ ²è|61.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|493|€ ´ä|61.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ ¶ä|62.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ ¸è|62.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|€ ºæ|63.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|€ ¼â|63.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ ¾è|64.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|€ Àä|68.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ Âä|69.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ Äà|7.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ Æà|7.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ Èâ|7.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ Êâ|70.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ Ìè|71.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|€ Îâ|71.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ Ðæ|72.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|€ Òè|73.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|493|€ Ôä|74.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ Öæ|76.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|387|€ Øè|76.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|€ Úæ|77.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|€ Üü|79.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGE.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|525|TssF|586|€ Þæ|79.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|€ àâ|8.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ ââ|8.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ äæ|80.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|€ ææ|80.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|€ èê|81.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|435|TssF|455|€ êø|82.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGE.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|434|TssF|3|€ ìì|82.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|227|TssF|455|€ îê|82.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|227|TssF|455|€ ðê|83.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|227|TssF|455|€ òè|84.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|€ ôä|86.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|€ öè|86.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|387|€ øâ|87.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ úä|87.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ üä|88.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ þæ|88.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|€ €ä|89.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|€ ‚à|9.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ „â|9.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ †ä|91.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|€ ˆè|92.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|493|€ Šè|93.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|381|€ Œê|94.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|434|TssF|455|€ Žè|94.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|49|TssF|391|€ ä|97.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ ’ì|97.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|€ ”ö|98.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGV.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|94|TssF|3|€ –â|99.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|€ ˜ú|0.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGE.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|  šâ|10.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  œì|100.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|525|  žä|100.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|   ê|100.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|387|  ¢ì|101.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|227|TssF|455|  ¤æ|101.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  ¦è|102.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|  ¨ì|102.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|49|  ªê|103.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|387|  ¬ì|107.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.3|TssF|203|TssF|586|  ®î|108.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|  °â|11.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  ²î|110.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|227|TssF|455|  ´æ|111.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  ¶æ|111.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  ¸è|112.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|  ºæ|112.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|23|  ¼ä|113.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  ¾è|114.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|3|  Àè|114.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|3|  Âì|115.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|46|TssF|394|  Äì|115.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|  Æè|116.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|  Èî|117.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|  Êî|117.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|  Ìè|118.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|493|  Îâ|12.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  Ðè|120.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|493|  Òì|120.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|49|  Ôì|120.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|449|  Öæ|123.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|23|  Øê|124.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|387|  Úè|124.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|387|  Üæ|124.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  Þì|126.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|  àì|127.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|  âì|127.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|49|  äî|128.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|525|  æì|129.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|46|TssF|394|  èâ|13.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  êä|13.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  ìæ|131.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  îì|131.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|525|  ðê|132.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|49|  òä|133.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  ôî|133.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|525|  öî|133.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|493|TssF|381|  øî|135.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|449|  úè|138.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|387|  üæ|138.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  þè|138.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|493|  €î|138.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|525|TssF|586|  ‚ì|139.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|525|  „ê|139.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|381|  †î|140.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|525|TssF|586|  ˆè|140.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|23|  Šì|141.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|455|  Œì|142.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|525|  Žè|143.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|23|  ê|144.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|23|  ’è|145.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|13|  ”ê|146.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|23|  –ì|147.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|525|TssF|586|  ˜î|148.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|525|TssF|586|  šê|149.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|493|  œê|149.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|49|  žî|149.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|525|   â|15.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  ¢è|150.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|29|  ¤ì|153.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|381|  ¦ì|154.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|162|  ¨î|155.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|381|  ªî|155.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|381|  ¬ì|157.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|  ®ì|157.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|586|  °ê|158.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|46|TssF|391|  ²æ|158.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  ´è|161.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|434|  ¶ê|161.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|493|  ¸ê|165.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|493|  ºè|166.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|  ¼è|168.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|387|  ¾ê|168.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|387|  Àì|169.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|381|  Âô|18.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFG.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|3|  Äê|188.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|49|  Æä|19.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  Èâ|19.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  Êæ|194.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|23|  Ìä|197.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  Îè|198.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|387|  Ðø|20.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGVE.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|3|  Òä|20.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  Ôö|21.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFG.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|340|TssF|3|  Öâ|21.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  Øì|22.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|  Úì|224.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|525|  Üì|229.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|  Þä|230.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  àì|231.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|525|TssF|586|  âê|234.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|387|  äè|235.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|381|  æú|24.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGVE.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|340|TssF|3|  èì|244.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|586|TssF|381|  êè|248.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|387|  ìä|25.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  îì|26.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|455|  ðì|27.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|455|  òà|3.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  ôà|3.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  öâ|30.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  øä|30.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  úä|30.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  üö|31.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGE.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|3|  þê|31.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|  €ô|33.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFG.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|3|  ‚â|34.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  „ä|34.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  †ì|35.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|455|  ˆö|36.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGE.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|94|TssF|3|  Šâ|36.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  Œä|37.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  Žö|38.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGV.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|3|  ì|39.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|  ’â|4.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  ”ì|40.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|  –ä|40.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  ˜ø|41.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGVE.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|29|TssF|3|  šô|42.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFG.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|94|TssF|3|  œø|42.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGVE.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|94|TssF|3|  žä|44.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|   è|44.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|  ¢ä|44.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|  ¤ø|45.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGE.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|340|TssF|3|  ¦ì|45.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|435|TssF|455|  ¨ê|45.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|455|TssF|455|  ªä|47.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|  ¬æ|49.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|  ®ä|50.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  °è|51.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|  ²è|51.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|493|  ´ê|52.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|203|TssF|586|  ¶ê|55.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|  ¸ä|55.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|  ºä|57.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  ¼æ|58.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|  ¾ä|58.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|  Àæ|59.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|  Ââ|59.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  Äì|59.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|227|TssF|455|  Æì|60.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|197|TssF|586|  Èè|61.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|493|  Êä|61.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  Ìä|62.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  Îè|62.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|  Ðæ|63.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|  Òâ|63.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  Ôè|64.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|  Öä|68.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  Øä|69.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  Úà|7.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  Üà|7.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  Þâ|7.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  àâ|70.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  âè|71.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|  äâ|71.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  ææ|72.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|  èè|73.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|493|  êä|74.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  ìæ|76.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|387|  îè|76.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|  ðæ|77.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|  òü|79.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGE.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|525|TssF|586|  ôæ|79.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|  öâ|8.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  øâ|8.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  úæ|80.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|  üæ|80.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|  þê|81.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|435|TssF|455|  €ø|82.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGE.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|434|TssF|3|  ‚ì|82.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|227|TssF|455|  „ê|82.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|227|TssF|455|  †ê|83.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|227|TssF|455|  ˆè|84.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|474|TssF|3|  Šä|86.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|  Œè|86.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|387|  Žâ|87.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  ä|87.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  ’ä|88.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  ”æ|88.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|  –ä|89.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|  ˜à|9.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  šâ|9.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  œä|91.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|29|  žè|92.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|493|   è|93.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|381|  ¢ê|94.../data/crosslinks/old/Exp2-KFG-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|434|TssF|455|  ¤è|94.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|49|TssF|391|  ¦ä|97.../data/crosslinks/old/Exp2-KFGE-081016-2.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|  ¨ì|97.../data/crosslinks/old/Exp3-KFGE-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|171|TssF|455|  ªö|98.../data/crosslinks/old/Exp1-BP-CXMS-12aout16-KFGV.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|94|TssF|3|  ¬â|99.../data/crosslinks/old/Exp3-KFG-081016-3.csv.New_Database_4540641936.New_Database_4534148368.1|TssF|3|TssF|3|   B &explicit resolutionmassradius*diffusion coefficient
+score
+weightradius
+ external frame aliased element residue index copy index 
+&first residue index $last residue index state index molecule bonded 0 bonded 1  rigid body index  residue typechain idtype name 
+types 
+roots residue indexesrepresentation coordinatesrgb color
+variancestranslationcoordinates
+ rotation  coordinates list
+ H    H tþ†ü„ø€ðxêrèpìtænö~älâjÞfØ`Ö^àhÔ\ÜdÒZÐXÌTÈPòzÄDÂBÊRÚbÀ@¸8ÆN°0²2®.¬,¶6ª*¤$¾>ô|¢"ú‚îv  žš¼<ÎV˜–”’Ž´4œ¨(Œº:¦& tþˆü†ø‚ðzêtèrìvæpö€änâlÞhØbÖ`àjÔ^ÜfÒ\ÐZÌVÈRò|ÄFÂDÊTÚdÀB¸:ÆP°2²4®0¬.¶8ª,¤&¾@ô~¢$ú„îx "ž š¼>ÎX˜–”’Ž´6œ¨*Œº<¦( 
+<   L   AJ   A
+   A   A x„ €	Ez €	Ex €	Et €	Er €	Ep €	Eh €	E` €	Eb €	E^ €	E\ €	Eˆ @ÎDX €	E† €	EV €	E| €	ET €	E€ €	Ef €	EN €	E8 €	E2 €	E0 €	E< €	EP €	E. €	Ev €	ED €	E, €	E@ €	Ej €	E& €	E$ €	E" €	Ed €	E €	E €	EZ €	E €	E €	E6 €	E €	E> €	E4 €	E €	E €	E~ €	El €	E* €	E €	EB €	E( €	En €	E  €	EF @ÎD: €	ER €	E €	E‚ €	E €	E x„”ñ@z”ñ@x”ñ@t”ñ@r”ñ@p”ñ@h”ñ@`”ñ@b”ñ@^”ñ@\”ñ@ˆ}Û@X”ñ@†”ñ@V”ñ@|”ñ@T”ñ@€”ñ@f”ñ@N”ñ@8”ñ@2”ñ@0”ñ@<”ñ@P”ñ@.”ñ@v”ñ@D”ñ@,”ñ@@”ñ@j”ñ@&”ñ@$”ñ@"”ñ@d”ñ@”ñ@”ñ@Z”ñ@”ñ@”ñ@6”ñ@”ñ@>”ñ@4”ñ@”ñ@”ñ@~”ñ@l”ñ@*”ñ@”ñ@B”ñ@(”ñ@n”ñ@ ”ñ@F}Û@:”ñ@R”ñ@”ñ@‚”ñ@”ñ@ 
+˜–  €?’  €?  €?Œ  €?ˆ  €?†  €?ü  €?ö  €?ô  €?‚  €?ì  €?æ  €?ä  €?â  €?à  €?Þ  €?Ü  €?Ø  €?Ö  €?Ô  €?Ò  €?Ð  €?È  €?Æ  €?Ä  €?¾  €?¸  €?¶  €?þ  €?´  €?²  €?°  €?¬  €?¨  €?¤  €?ž  €?œ  €?Š  €?è  €?˜  €?–  €?”  €?’  €?  €?ˆ  €?„  €?‚  €?þ  €?Ê  €?ü  €?ø  €?ê  €?æ  €?â  €?Ú  €?Ø  €?Ð  €?Î  €?È  €?Ä  €?Ü  €?ô  €?Î  €?Â  €?ò  €?Þ  €?À  €?¾  €?º  €?º  €?¸  €?¶  €?²  €?°  €?À  €?¬  €?Â  €?ª  €?¨  €?¤  €?   €?Ž  €?ž  €?œ  €?˜  €?–  €?’  €?ð  €?®  €?  €?Ì  €?Ž  €?Š  €?†  €?Š  €?„  €?¦  €?à  €?ö  €?ì  €?ö  €?è  €?æ  €?â  €?‚  €?Ê  €?þ  €?”  €?Ü  €?Ú  €?ð  €?Ö  €?ü  €?Ô  €?ø  €?à  €?Ò  €?Ð  €?È  €?ˆ  €?ú  €?Ì  €?Æ  €?ò  €?Ä  €?Â  €?ê  €?¶  €?ì  €?´  €?ª  €?ø  €?°  €?î  €?¬  €?´  €?ª  €?Ø  €?®  €?Ú  €?Î  €?¦  €?   €?Ò  €?ú  €?¤  €?Ö  €?î  €?¼  €?Ì  €?Œ  €?ú  €?   €?ò  €?Þ  €?  €?Ô  €?†  €?¾  €?À  €?€  €?¨  €?’  €?¢  €?º  €?”  €?š  €?Œ  €?€  €?¼  €?¢  €?®  €?Ž  €?Š  €?–  €?ê  €?Ê  €?Ž  €?š  €?ä  €?è  €?†  €?¸  €?ž  €?š  €?„  €?Œ  €?²  €?î  €?ˆ  €?ð  €?„  €?œ  €?Æ  €?‚  €?¢  €?”  €?¼  €?€  €?¦  €?ô  €?ä  €?˜  €?€  €?  HBA   x„            z            x            t            r            p            h            `            b            ^            \            ˆ            X            †            V            |            T            €            f            N            8            2            0            <            P            .            v            D            ,            @            j            &            $            "            d                                    Z                                    6                        >            4                                    ~            l            *                        B            (            n                         F            :            R                        ‚                         Ž¦  €?        ¤    %I’<·m{?¢          €?ž    I’$>nÛV?œ    ·mÛ>%I?š  €?        ˜  €?        ˆ    ’$I>Û¶M?€    %I’<·m{?ü    ·mÛ>%I?ø  €?          €?        ö  €?        ô    ·mÛ>%I?ò    ’$I>Û¶M?ð    ·mÛ>%I?î    ’$I>Û¶M?ê  €?        è    I’$>nÛV?æ    ’$I>Û¶M?ä  €?        â    ’$I>Û¶M?Ô    ’$I>Û¶M?Ð    ·mÛ>%I?Ì  €?        Ê  €?        È    I’$>nÛV?Ä    nÛ¶=’$i?à  €?        Â  €?        Æ    %I’<·m{?¾    ·mÛ>%I?°    ’$I>Û¶M?¨    ·mÛ=I’d?ž    ·mÛ>%I?˜    ·mÛ>%I?Ö  €?        –  €?        œ    ·m[=%Ir?”      €>  @?      €>  @?Ž    ·mÛ>%I?ˆ    ·m[=%Ir?¼    ·mÛ>%I?†    ·mÛ=I’d?‚  €?        þ      €>  @?ü    ·mÛ>%I?ô  €?        ò  €?        ö  €?        ð    ·mÛ=I’d?î    ·mÛ=I’d?ì  €?        ê    nÛ6>%IR?à    ’$I>Û¶M?Ü      €>  @?†    nÛ¶=’$i?ä    %I=nÛv?Ö  €?        Ô    %I=nÛv?Ž  €?        Ò  €?        Ú    ’$I>Û¶M?Ð    ·mÛ>%I?Î    nÛ6>%IR?Ì  €?        È  €?        Æ  €?        Ä    nÛ¶=’$i?ø  €?        À    %I’=Û¶m?º    ’$I>Û¶M?¸    I’$>nÛV?®          €?¬      €>  @?ª    %I’=Û¶m?¨    %I’=Û¶m?¤    %I’=Û¶m?è    %I’=Û¶m?ž    ’$I>Û¶M?š    I’$>nÛV?–    ’$I>Û¶M?’          €?Ž    %I=nÛv?”    %I=nÛv?Œ    %I’<·m{?‚    nÛ¶=’$i?ú  €?        Ò  €?        Š          €?„    %I=nÛv?â          €?     ’$I>Û¶M?†    ’$I>Û¶M?‚    ’$I>Û¶M?Ø      €>  @?þ    I’$>nÛV?ú    nÛ6>%IR?Š  €?        ¤    %I=nÛv?ø    %I’<·m{?ð    nÛ¶=’$i?ì  €?        à      €>  @?Þ      €>  @?Ü  €?        ¼    nÛ6>%IR?Ø    nÛ6>%IR?Þ  €?        €    ·mÛ>%I?Ð    I’$>nÛV?Ê      €>  @?Î    ’$I>Û¶M?Æ    ·mÛ>%I?Â    %I=nÛv?ü  €?        À    ·mÛ>%I?Œ    nÛ6>%IR?¾    ·mÛ>%I?º    ·m[=%Ir?¸    ’$I>Û¶M?¶  €?        ´    %I’<·m{?è  €?        Ì    I’$>nÛV?®      €>  @?¬    %I’<·m{?®  €?        ¬    ·mÛ>%I?ª    nÛ6>%IR?¨    nÛ¶=’$i?¦    ’$I>Û¶M?€    ’$I>Û¶M?¤  €?        ¦    %I=nÛv?¢    nÛ¶=’$i?°          €?     nÛ6>%IR?„      €?  €?æ    %I=nÛv?ì    nÛ6>%IR?z      €?  €?x      €?  €?¢    ·mÛ>%I?t      €?  €?’  €?        Ú    nÛ6>%IR?Â    ·mÛ>%I?r      €?  €?p      €?  €?h      €?  €?À    ·mÛ>%I?”    ·mÛ>%I?`      €?  €?b      €?  €?^      €?  €?¬  €?        \      €?  €?ª    ·mÛ>%I?ˆ      €?  €?X      €?  €?V      €?  €?ú    ’$I>Û¶M?ž  €?        †      €?  €?|      €?  €?T      €?  €?€      €?  €?N      €?  €?Š    ·mÛ>%I?ò  €?        Ü  €?        f      €?  €?Ä      €>  @?8          €?²    nÛ¶=’$i?2          €?â    nÛ¶=’$i?´    %I’<·m{?¨      €>  @?0          €?<          €?P      €?  €?   €?        š    ·m[=%Ir?ê  €?        .          €?¶      €>  @?ö          €?¼  €?        š  €?        v      €?  €?D          €?Ô    %I’<·m{?Ø  €?        ,          €?@          €?È      €>  @?æ    %I=nÛv?Œ  €?        j      €?  €?œ    nÛ¶=’$i?„  €?        º  €?        &          €?$          €?¸    ·mÛ>%I?"          €?Ê    ·m[=%Ir?’  €?        d      €?  €?Î  €?                  €?Ö    ·m[=%Ir?          €?²    I’$>nÛV?Z      €?  €?          €?–    ·mÛ>%I?ª    ·m[=%Ir?6          €?          €?´  €?        °  €?                  €?>          €?4          €?          €?          €?ô    ’$I>Û¶M?l      €?  €?~      €?  €?*          €?B          €?Þ  €?                  €?¶    I’$>nÛV?ä    ’$I>Û¶M?¾    nÛ6>%IR?„    nÛ¶=’$i?(          €?    %I=nÛv?           €?n      €?  €?F          €?     %I=nÛv?²  €?        :          €?R      €?  €?Ò    nÛ¶=’$i?ˆ    ·m[=%Ir?          €?          €?‚      €?  €?Ú  €?        œ    %I’<·m{?¦          €?¢          €?þ    %I=nÛv?˜    ’$I>Û¶M?î    ’$I>Û¶M?˜      €>  @? x„”ñ@”ñ@”ñ@z”ñ@”ñ@”ñ@x”ñ@”ñ@”ñ@t”ñ@”ñ@”ñ@r”ñ@”ñ@”ñ@p”ñ@”ñ@”ñ@h”ñ@”ñ@”ñ@`”ñ@”ñ@”ñ@b”ñ@”ñ@”ñ@^”ñ@”ñ@”ñ@\”ñ@”ñ@”ñ@ˆ}Û@}Û@}Û@X”ñ@”ñ@”ñ@†”ñ@”ñ@”ñ@V”ñ@”ñ@”ñ@|”ñ@”ñ@”ñ@T”ñ@”ñ@”ñ@€”ñ@”ñ@”ñ@f”ñ@”ñ@”ñ@N”ñ@”ñ@”ñ@8”ñ@”ñ@”ñ@2”ñ@”ñ@”ñ@0”ñ@”ñ@”ñ@<”ñ@”ñ@”ñ@P”ñ@”ñ@”ñ@.”ñ@”ñ@”ñ@v”ñ@”ñ@”ñ@D”ñ@”ñ@”ñ@,”ñ@”ñ@”ñ@@”ñ@”ñ@”ñ@j”ñ@”ñ@”ñ@&”ñ@”ñ@”ñ@$”ñ@”ñ@”ñ@"”ñ@”ñ@”ñ@d”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@Z”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@6”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@>”ñ@”ñ@”ñ@4”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@~”ñ@”ñ@”ñ@l”ñ@”ñ@”ñ@*”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@B”ñ@”ñ@”ñ@(”ñ@”ñ@”ñ@n”ñ@”ñ@”ñ@ ”ñ@”ñ@”ñ@F}Û@}Û@}Û@:”ñ@”ñ@”ñ@R”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@‚”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@    J   JL 
+  €J¦	
+ "$&(*,.02468:<>@BDFHJLNPRTVXZ\^`bdfhjlnprtvxz|~€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€	‚	„	†	ˆ	Š	Œ	Ž		’	”	–	˜	š	œ	ž	 	¢	¤	¦	 „(º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞà z(òôöøúüþ€‚„†ˆŠŒŽ’”–˜ x(ÊÌÎÐÒÔÖØÚÜÞàâäæèêìîð t(úüþ€‚„†ˆŠŒŽ’”–˜šœž  r(ÒÔÖØÚÜÞàâäæèêìîðòôöø p(ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐ h(ŠŒŽ’”–˜šœž ¢¤¦¨ª¬®° `(êìîðòôöøúüþ€‚„†ˆŠŒŽ b(’”–˜šœž ¢¤¦¨ª¬®°²´¶¸ ^(ÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæè \(šœž ¢¤¦¨ª¬®°²´¶¸º¼¾À ˆŠ	Œ	Ž		’	”	–	˜	š	œ	ž	 	¢	¤	¦	 X(ÊÌÎÐÒÔÖØÚÜÞàâäæèêìîð †(âäæèêìîðòôöøúüþ€	‚	„	†	ˆ	 V(¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈ |(šœž ¢¤¦¨ª¬®°²´¶¸º¼¾À T(z|~€‚„†ˆŠŒŽ’”–˜šœž  P(*,.02468:<>@BDFHJLNP €(êìîðòôöøúüþ€‚„†ˆŠŒŽ f(âäæèêìîðòôöøúüþ€‚„†ˆ N(
+ "$&( 8(òôöøúüþ€‚„†ˆŠŒŽ’”–˜ 2(úüþ€‚„†ˆŠŒŽ’”–˜šœž  0(ÒÔÖØÚÜÞàâäæèêìîðòôöø <(ÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæè .(ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐ v(¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈ D(âäæèêìîðòôöøúüþ€	‚	„	†	ˆ	 ,(‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ @(’”–˜šœž ¢¤¦¨ª¬®°²´¶¸ ~(ÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæè l(ÚÜÞàâäæèêìîðòôöøúüþ€ *(ÚÜÞàâäæèêìîðòôöøúüþ€ j(²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØ &(ŠŒŽ’”–˜šœž ¢¤¦¨ª¬®° L¦	
+ "$&(*,.02468:<>@BDFHJLNPRTVXZ\^`bdfhjlnprtvxz|~€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€	‚	„	†	ˆ	Š	Œ	Ž		’	”	–	˜	š	œ	ž	 	¢	¤	¦	 $(âäæèêìîðòôöøúüþ€‚„†ˆ "(º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞà d(º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞà (šœž ¢¤¦¨ª¬®°²´¶¸º¼¾À ¦	
+ "$&(*,.02468:<>@BDFHJLNPRTVXZ\^`bdfhjlnprtvxz|~€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€	‚	„	†	ˆ	Š	Œ	Ž		’	”	–	˜	š	œ	ž	 	¢	¤	¦	 (òôöøúüþ€‚„†ˆŠŒŽ’”–˜ Z(òôöøúüþ€‚„†ˆŠŒŽ’”–˜ (ÊÌÎÐÒÔÖØÚÜÞàâäæèêìîð (¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈ 6(ÊÌÎÐÒÔÖØÚÜÞàâäæèêìîð (z|~€‚„†ˆŠŒŽ’”–˜šœž  >(êìîðòôöøúüþ€‚„†ˆŠŒŽ 4(¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈ (ÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæè (RTVXZ\^`bdfhjlnprtvx (*,.02468:<>@BDFHJLNP B(º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞà ((²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØ n(‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨  (’”–˜šœž ¢¤¦¨ª¬®°²´¶¸ FŠ	Œ	Ž		’	”	–	˜	š	œ	ž	 	¢	¤	¦	 :(šœž ¢¤¦¨ª¬®°²´¶¸º¼¾À R(RTVXZ\^`bdfhjlnprtvx (
+ "$&( ‚(’”–˜šœž ¢¤¦¨ª¬®°²´¶¸ (êìîðòôöøúüþ€‚„†ˆŠŒŽ 
+¦	
+ "$&(*,.02468:<>@BDFHJLNPRTVXZ\^`bdfhjlnprtvxz|~€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€‚„†ˆŠŒŽ’”–˜šœž ¢¤¦¨ª¬®°²´¶¸º¼¾ÀÂÄÆÈÊÌÎÐÒÔÖØÚÜÞàâäæèêìîðòôöøúüþ€	‚	„	†	ˆ	Š	Œ	Ž		’	”	–	˜	š	œ	ž	 	¢	¤	¦	  ˜–N ’8 N Œ86 ˆ< † üN ö2 ô ‚N ì8" æ ä: âN àN Þ ÜF@ Ø: Ö2 ÔN Ò< Ð: ÈN ÆN ÄN ¾: ¸: ¶N þ ´N ²< °F ¬N ¨ ¤N žF  œ< Š2 è86 ˜N – ” ’z8 86 ˆ „ ‚ þ8 ÊN üN ø ê æ âN Úz8 Øz8 Ð, Î2 ÈN ÄF@ ÜN ôN ÎN Â8 ò ÞN ÀN ¾, º º ¸2 ¶N ²N °N ÀN ¬ ÂN ª2F ¨2 ¤:  < Ž, ž6 œN ˜Fˆ –8 ’2F ð8" ®8" : Ì2 Ž2F ŠN †8 Š: „< ¦2 àN ö@: ìF@ öN è< æN âz8 ‚F@ ÊF@ þP ” ÜN Ú8 ðF@ ÖN üN ÔN øN à2< ÒN Ð2 È8 ˆF@ ú8 Ì: Æ8 ò Ä2 Â2 êF@ ¶< ìN ´8 ª øP ° îN ¬2 ´ ª ØF@ ®8 Ú ÎF@ ¦N  8 Ò2F úP ¤ ÖN î8" ¼N Ì8 ŒP úN  N ò: ÞF@ : Ô2 † ¾z8 À €N ¨ ’8 ¢ º< ”2F š: Œ8" €F@ ¼8 ¢: ®8 ŽN Š2 –F  ê6 Ê8 Ž2 š2 äN è8 †@: ¸N žN šN „N Œ ²8 î2 ˆN ðz8 „N œ8" ÆN ‚8 ¢< ”2 ¼N € ¦ ô8: ä2 ˜8 €(2FˆPNz< 8,@:"6      –¬—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ªbúD»Ê[DßC—ßD°I`D™þàC ¨&?D¤eDZUÑC’X D'^DO’»C ¦—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ¢oDiÆaDîþ¸C’X D'^DO’»C ž—ßD°I`D™þàCÍ›üCÙƒYD¦ÂÂC œ—ßD°I`D™þàC¦òD§\DÍ+ßC š—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ˜—ßD°I`D™þàC4—Ãe/ BþŠ<Ä –—ßD°I`D™þàC¦òD§\DÍ+ßC ’—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ˆ«'üC•ý]D“GÂC—ßD°I`D™þàC €oDiÆaDîþ¸C—ßD°I`D™þàC ü—ßD°I`D™þàC¦òD§\DÍ+ßC ø—ßD°I`D™þàC4—Ãe/ BþŠ<Ä —ßD°I`D™þàC4—Ãe/ BþŠ<Ä ö—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ô—ßD°I`D™þàC¦òD§\DÍ+ßC ò6DŽYD ‡ÌC‚ˆDÂ¾VDïÁC ð—ßD°I`D™þàC¦òD§\DÍ+ßC î«'üC•ý]D“GÂC—ßD°I`D™þàC ì—ßD°I`D™þàC¾ÇD×ë\DÄ÷ÁC ê—ßD°I`D™þàC4—Ãe/ BþŠ<Ä è—ßD°I`D™þàCÍ›üCÙƒYD¦ÂÂC æ«'üC•ý]D“GÂC—ßD°I`D™þàC ä—ßD°I`D™þàC4—Ãe/ BþŠ<Ä â«'üC•ý]D“GÂC—ßD°I`D™þàC Ô«'üC•ý]D“GÂC—ßD°I`D™þàC Ð—ßD°I`D™þàC¦òD§\DÍ+ßC Ì—ßD°I`D™þàC4—Ãe/ BþŠ<Ä Ê—ßD°I`D™þàC4—Ãe/ BþŠ<Ä È—ßD°I`D™þàCÍ›üCÙƒYD¦ÂÂC à—ßD°I`D™þàC4—Ãe/ BþŠ<Ä Äˆ®D ofDc[ÎC’X D'^DO’»C Â—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ”—ßD°I`D™þàC¦òD§\DÍ+ßC À—ßD°I`D™þàC¦òD§\DÍ+ßC ÆÒçD„<iDÔþÌC‚ˆDÂ¾VDïÁC ¾—ßD°I`D™þàC¦òD§\DÍ+ßC ¸—ßD°I`D™þàC¦òD§\DÍ+ßC ²—ßD°I`D™þàCÍ›üCÙƒYD¦ÂÂC °«'üC•ý]D“GÂC—ßD°I`D™þàC ª—ßD°I`D™þàC¦òD§\DÍ+ßC ¨’X D'^DO’»CÑ[9Ã‰Ã€B#–BÄ ¢—ßD°I`D™þàC¦òD§\DÍ+ßC ž—ßD°I`D™þàC¦òD§\DÍ+ßC ˜¦òD§\DÍ+ßC—ßD°I`D™þàC Ö—ßD°I`D™þàC4—Ãe/ BþŠ<Ä œbúD»Ê[DßC—ßD°I`D™þàC –—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ”&?D¤eDZUÑC’X D'^DO’»C &?D¤eDZUÑC’X D'^DO’»C Ž¦òD§\DÍ+ßC—ßD°I`D™þàC ¼—ßD°I`D™þàC¦òD§\DÍ+ßC †’X D'^DO’»CÑ[9Ã‰Ã€B#–BÄ þ&?D¤eDZUÑC’X D'^DO’»C ü¦òD§\DÍ+ßC—ßD°I`D™þàC ô—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ò—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ö—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ð’X D'^DO’»CÑ[9Ã‰Ã€B#–BÄ ì—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ê—ßD°I`D™þàC¾ÇD×ë\DÄ÷ÁC à6DŽYD ‡ÌC‚ˆDÂ¾VDïÁC ÔWƒD`D¹°ÀC—ßD°I`D™þàC Ö—ßD°I`D™þàC4—Ãe/ BþŠ<Ä Ž—ßD°I`D™þàC4—Ãe/ BþŠ<Ä Ò—ßD°I`D™þàC4—Ãe/ BþŠ<Ä Ú‚ˆDÂ¾VDïÁC6DŽYD ‡ÌC Ð¦òD§\DÍ+ßC—ßD°I`D™þàC Ì—ßD°I`D™þàC4—Ãe/ BþŠ<Ä Ê—ßD°I`D™þàC¦òD§\DÍ+ßC Æ—ßD°I`D™þàC4—Ãe/ BþŠ<Ä À‚ˆDÂ¾VDïÁC¾ÇD×ë\DÄ÷ÁC ¸—ßD°I`D™þàCÍ›üCÙƒYD¦ÂÂC Þ—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ¶—ßD°I`D™þàCÍ›üCÙƒYD¦ÂÂC È—ßD°I`D™þàC4—Ãe/ BþŠ<Ä  —ßD°I`D™þàC¾ÇD×ë\DÄ÷ÁC ²—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ¬&?D¤eDZUÑC’X D'^DO’»C ¨‚ˆDÂ¾VDïÁC¾ÇD×ë\DÄ÷ÁC î’X D'^DO’»CÑ[9Ã‰Ã€B#–BÄ šbúD»Ê[DßC—ßD°I`D™þàC  —ßD°I`D™þàC4—Ãe/ BþŠ<Ä ž‚ˆDÂ¾VDïÁC6DŽYD ‡ÌC è‚ˆDÂ¾VDïÁC¾ÇD×ë\DÄ÷ÁC †ˆ®D ofDc[ÎC’X D'^DO’»C Ü&?D¤eDZUÑC’X D'^DO’»C ä—ßD°I`D™þàC¾ÇD×ë\DÄ÷ÁC º—ßD°I`D™þàC4—Ãe/ BþŠ<Ä œ’X D'^DO’»CCÈDw]Dœ@ÛC „—ßD°I`D™þàC4—Ãe/ BþŠ<Ä š—ßD°I`D™þàCÍ›üCÙƒYD¦ÂÂC ¦òD§\DÍ+ßCÀL’ÃÒ:ŠB½}:Ä ‚ˆ®D ofDc[ÎC’X D'^DO’»C Œ«'üC•ý]D“GÂC6DŽYD ‡ÌC ú—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ¤CÈDw]Dœ@ÛC¾ÇD×ë\DÄ÷ÁC ”¦òD§\DÍ+ßCÀL’ÃÒ:ŠB½}:Ä Ò—ßD°I`D™þàC4—Ãe/ BþŠ<Ä Š«'üC•ý]D“GÂC’X D'^DO’»C ú—ßD°I`D™þàC¾ÇD×ë\DÄ÷ÁC ¤WƒD`D¹°ÀC—ßD°I`D™þàC ø’X D'^DO’»CÑ[9Ã‰Ã€B#–BÄ Š—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ô‚ˆDÂ¾VDïÁC6DŽYD ‡ÌC ð’X D'^DO’»CCÈDw]Dœ@ÛC ì—ßD°I`D™þàC4—Ãe/ BþŠ<Ä æCÈDw]Dœ@ÛC¾ÇD×ë\DÄ÷ÁC „ˆ®D ofDc[ÎC’X D'^DO’»C ä‚ˆDÂ¾VDïÁC6DŽYD ‡ÌC ¾—ßD°I`D™þàC¾ÇD×ë\DÄ÷ÁC º«'üC•ý]D“GÂC—ßD°I`D™þàC â’X D'^DO’»CCÈDw]Dœ@ÛC ´—ßD°I`D™þàCoDiÆaDîþ¸C Ž¦òD§\DÍ+ßCÀL’ÃÒ:ŠB½}:Ä Ä’X D'^DO’»CCÈDw]Dœ@ÛC ø—ßD°I`D™þàC4—Ãe/ BþŠ<Ä à&?D¤eDZUÑC’X D'^DO’»C Ú—ßD°I`D™þàC¾ÇD×ë\DÄ÷ÁC Â¦òD§\DÍ+ßC—ßD°I`D™þàC ’—ßD°I`D™þàC4—Ãe/ BþŠ<Ä Ø—ßD°I`D™þàC¾ÇD×ë\DÄ÷ÁC Þ—ßD°I`D™þàC4—Ãe/ BþŠ<Ä Î—ßD°I`D™þàC4—Ãe/ BþŠ<Ä Ö—ßD°I`D™þàC¦òD§\DÍ+ßC æWƒD`D¹°ÀC—ßD°I`D™þàC Œ—ßD°I`D™þàC4—Ãe/ BþŠ<Ä È&?D¤eDZUÑC’X D'^DO’»C þ—ßD°I`D™þàCÍ›üCÙƒYD¦ÂÂC Ø&?D¤eDZUÑC’X D'^DO’»C ü—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ÂCÈDw]Dœ@ÛC¾ÇD×ë\DÄ÷ÁC Ä&?D¤eDZUÑC’X D'^DO’»C Š—ßD°I`D™þàC¦òD§\DÍ+ßC Ü—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ò—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ¤‚ˆDÂ¾VDïÁC¾ÇD×ë\DÄ÷ÁC À¦òD§\DÍ+ßC—ßD°I`D™þàC ’—ßD°I`D™þàC4—Ãe/ BþŠ<Ä –6DŽYD ‡ÌC‚ˆDÂ¾VDïÁC Ê&?D¤eDZUÑC’X D'^DO’»C Î—ßD°I`D™þàC¾ÇD×ë\DÄ÷ÁC º—ßD°I`D™þàC¦òD§\DÍ+ßC Ð—ßD°I`D™þàCÍ›üCÙƒYD¦ÂÂC €¦òD§\DÍ+ßC—ßD°I`D™þàC „—ßD°I`D™þàC¾ÇD×ë\DÄ÷ÁC â¦òD§\DÍ+ßC¾ÇD×ë\DÄ÷ÁC ˆbúD»Ê[DßC—ßD°I`D™þàC ¸«'üC•ý]D“GÂC—ßD°I`D™þàC ‚—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ´—ßD°I`D™þàC4—Ãe/ BþŠ<Ä °—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ª—ßD°I`D™þàC¾ÇD×ë\DÄ÷ÁC ê—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ¨’X D'^DO’»CCÈDw]Dœ@ÛC ´ÌD+ÈeDÔ•ÑC‚ˆDÂ¾VDïÁC è—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ¶—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ®—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ¬—ßD°I`D™þàC¦òD§\DÍ+ßC ¬ÌD+ÈeDÔ•ÑC‚ˆDÂ¾VDïÁC ®&?D¤eDZUÑC’X D'^DO’»C Ì—ßD°I`D™þàCÍ›üCÙƒYD¦ÂÂC Þ&?D¤eDZUÑC’X D'^DO’»C Î«'üC•ý]D“GÂC—ßD°I`D™þàC Æ—ßD°I`D™þàC¦òD§\DÍ+ßC €6DŽYD ‡ÌC‚ˆDÂ¾VDïÁC ¦«'üC•ý]D“GÂC—ßD°I`D™þàC Ü—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ¼—ßD°I`D™þàC¾ÇD×ë\DÄ÷ÁC Œ—ßD°I`D™þàC¾ÇD×ë\DÄ÷ÁC ¾¦òD§\DÍ+ßC—ßD°I`D™þàC ¦oDiÆaDîþ¸C’X D'^DO’»C ¤—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ‚‚ˆDÂ¾VDïÁC6DŽYD ‡ÌC  «'üC•ý]D“GÂC—ßD°I`D™þàC †6DŽYD ‡ÌC‚ˆDÂ¾VDïÁC ¢ˆ®D ofDc[ÎC’X D'^DO’»C °CÈDw]Dœ@ÛC¾ÇD×ë\DÄ÷ÁC ²ˆ®D ofDc[ÎC’X D'^DO’»C  —ßD°I`D™þàC¾ÇD×ë\DÄ÷ÁC ú«'üC•ý]D“GÂC—ßD°I`D™þàC ž—ßD°I`D™þàC4—Ãe/ BþŠ<Ä Ø—ßD°I`D™þàC4—Ãe/ BþŠ<Ä Ô’X D'^DO’»CÑ[9Ã‰Ã€B#–BÄ ¶&?D¤eDZUÑC’X D'^DO’»C öÍ›üCÙƒYD¦ÂÂC¾ÇD×ë\DÄ÷ÁC ¼—ßD°I`D™þàC4—Ãe/ BþŠ<Ä š—ßD°I`D™þàC4—Ãe/ BþŠ<Ä ˆ—ßD°I`D™þàC¦òD§\DÍ+ßC ®‚ˆDÂ¾VDïÁC‚qFÃBx:Bæ;Ä Ò’X D'^DO’»CCÈDw]Dœ@ÛC ª‚ˆDÂ¾VDïÁC¾ÇD×ë\DÄ÷ÁC þoDiÆaDîþ¸C’X D'^DO’»C î‚ˆDÂ¾VDïÁC6DŽYD ‡ÌC ˜&?D¤eDZUÑC’X D'^DO’»C ˜6DŽYD ‡ÌC‚ˆDÂ¾VDïÁC ¢¦òD§\DÍ+ßCÀL’ÃÒ:ŠB½}:Ä Ú—ßD°I`D™þàC4—Ãe/ BþŠ<Ä œ«'üC•ý]D“GÂC6DŽYD ‡ÌC ¦«'üC•ý]D“GÂC&?D¤eDZUÑC    t¤©¿d9jÎE¿´Ì‡³®Ô<       ˜–ð‡ÖD’ÏrBð‡ÖDŒY7‡AˆVºóB†€Ô†Aüð‡ÖDö×´Bô€Ô†A‚ð‡ÖDì9ª¤Bæ€Ô†Aä{ßðBâð‡ÖDàð‡ÖDÞ€Ô†AÜæìÄAØ{ßðBÖ×´BÔð‡ÖDÒVºóBÐ{ßðBÈð‡ÖDÆð‡ÖDÄð‡ÖD¾{ßðB¸{ßðB¶ð‡ÖDþ€Ô†A´ð‡ÖD²VºóB°wF B¬ð‡ÖD¨€Ô†A¤ð‡ÖDžC–BœVºóBŠ×´BèY7‡A˜ð‡ÖD–€Ô†A”€Ô†A’…‘ÅDY7‡Aˆ€Ô†A„2 B‚€Ô†AþÏrBÊð‡ÖDüð‡ÖDø€Ô†Aê€Ô†Aæ€Ô†Aâð‡ÖDÚ…‘ÅDØ…‘ÅDÐ‡™BÎ×´BÈð‡ÖDÄæìÄAÜð‡ÖDôð‡ÖDÎð‡ÖDÂÏrBò2 BÞð‡ÖDÀð‡ÖD¾‡™Bº€Ô†Aº€Ô†A¸×´B¶ð‡ÖD²ð‡ÖD°ð‡ÖDÀð‡ÖD¬€Ô†AÂð‡ÖDª¥ÚïA¨×´B¤{ßðB VºóBŽ‡™BžzÑìBœð‡ÖD˜`ûÄD–ÏrB’¥ÚïAð9ª¤B®9ª¤BhBÌ®Æ¢BŽ¥ÚïAŠð‡ÖD†ˆÂBŠ{ßðB„VºóB¦×´Bàð‡ÖDönAûAìæìÄAöð‡ÖDèVºóBæð‡ÖDâ…‘ÅD‚æìÄAÊæìÄAþIÔD”2 BÜð‡ÖDÚˆÂBðæìÄAÖð‡ÖDüð‡ÖDÔð‡ÖDøð‡ÖDàÉ<!BÒð‡ÖDÐù$†BÈÏrBˆæìÄAúÏrBÌ{ßðBÆÏrBò€Ô†AÄ×´BÂ×´BêæìÄA¶VºóBìð‡ÖD´ÏrBª€Ô†AøIÔD°€Ô†Aîð‡ÖD¬ù$†B´€Ô†Aª€Ô†AØæìÄA®ÏrBÚ€Ô†AÎæìÄA¦ð‡ÖD ÏrBÒ¥ÚïAúIÔD¤€Ô†AÖð‡ÖDî9ª¤B¼ð‡ÖDÌˆÂBŒIÔDúð‡ÖD ð‡ÖDò{ßðBÞæìÄA{ßðBÔ×´B†2 B¾…‘ÅDÀ€Ô†A€ð‡ÖD¨€Ô†A’ˆÂB¢€Ô†AºVºóB”¥ÚïAš{ßðBŒ9ª¤B€æìÄA¼ˆÂB¢{ßðB®ˆÂBŽð‡ÖDŠ×´B–C–BêzÑìBÊÏrBŽù$†Bšù$†Bäð‡ÖDèÏrB†nAûA¸ð‡ÖDžð‡ÖDšð‡ÖD„ð‡ÖDŒ€Ô†A²ÏrBî×´Bˆð‡ÖDð…‘ÅD„ð‡ÖDœ9ª¤BÆð‡ÖD‚ÏrB¢VºóB”×´B¼ð‡ÖD€€Ô†A¦€Ô†Aô)­Aä×´B˜ÏrB€àtõG   x„”ñ@”ñ@”ñ@z”ñ@”ñ@”ñ@x”ñ@”ñ@”ñ@t”ñ@”ñ@”ñ@r”ñ@”ñ@”ñ@p”ñ@”ñ@”ñ@h”ñ@”ñ@”ñ@`”ñ@”ñ@”ñ@b”ñ@”ñ@”ñ@^”ñ@”ñ@”ñ@\”ñ@”ñ@”ñ@ˆ}Û@}Û@}Û@X”ñ@”ñ@”ñ@†”ñ@”ñ@”ñ@V”ñ@”ñ@”ñ@|”ñ@”ñ@”ñ@T”ñ@”ñ@”ñ@€”ñ@”ñ@”ñ@f”ñ@”ñ@”ñ@N”ñ@”ñ@”ñ@8”ñ@”ñ@”ñ@2”ñ@”ñ@”ñ@0”ñ@”ñ@”ñ@<”ñ@”ñ@”ñ@P”ñ@”ñ@”ñ@.”ñ@”ñ@”ñ@v”ñ@”ñ@”ñ@D”ñ@”ñ@”ñ@,”ñ@”ñ@”ñ@@”ñ@”ñ@”ñ@j”ñ@”ñ@”ñ@&”ñ@”ñ@”ñ@$”ñ@”ñ@”ñ@"”ñ@”ñ@”ñ@d”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@Z”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@6”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@>”ñ@”ñ@”ñ@4”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@~”ñ@”ñ@”ñ@l”ñ@”ñ@”ñ@*”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@B”ñ@”ñ@”ñ@(”ñ@”ñ@”ñ@n”ñ@”ñ@”ñ@ ”ñ@”ñ@”ñ@F}Û@}Û@}Û@:”ñ@”ñ@”ñ@R”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@‚”ñ@”ñ@”ñ@”ñ@”ñ@”ñ@ z:b?—ÁV0Âœ¹sÂ8zÊÇÀeqèÁ)‡NÂ4>1@:½ÁRãÂ2ç“ÁÉlEÀ|Â<(‹ÞÁph"Â)6=Â0oÖ¹ÁBA&œGÂ.2šÀYžA…iÂ@²Y5ÂËHÉÁU¦7Â,C	Áín±Ao©Â(ÒRA%iB™Â$Û÷fÁú§]Bõ¦Â"ê­Á-OB«¹UÂ;øÁÚh·Az‚ŒÂ#¿‚ÂûÍ&B3½bÂ6¢'§@$ŽÁu9cÂ„%ŽÂiLBåÂ>ò]ÝÁ&º¨Áƒ^ÂË&†ÂÅBÍO•ÁrÂËÑCB¯÷ÁBÕG+ÂN‹ÂÚ_ÂÅ¼ˆÂ£•pB8ÁÁ„e¨IÃusõAëíBÄx¹í;ÃÎáŸB^DÄD”I'Â×ÂCcÂvDÃ7T©B?ÄtOÃTÃãèBk>ÄrÕlaÃèþ‘BÐAÄzÑ[9Ã‰Ã€B#–BÄp‘VÃ5N±BÃ.?ÄFËóÁVPèÁƒôÕÁ .œìÁË…B6U‚Ân“!cÃ ¼B‚ð=ÄhŠwÃ@ÜçBÔ<Ä`¶9pÃëà´BêIÄ&$‘iÀ¨KNB…ËÁjüuÃÛ_Cì>Äb®±{Ã‚Þ¥BÉ}EÄ^k¾rÃÜ)”BóºFÄ‡ïFÂ±;ÛA•”jÂdmÚÃ½~ÇBæ¹BÄ\öm€ÃÈyBÝuCÄr±JÂºTþAï*.ÂZdÂŠÃ¿íiBV¨BÄXc‚ÃkŠ‚B—­?Äˆ‚qFÃBx:Bæ;ÄVÐg‰Ã¼MBÍ¤=Ä†öêIÃE	B?p=Ä*^$@’µBšþÂlÕÖhÃj<ßBõ>Ä~”–<Ã²ý!B»AÄTy‡ÃSè]B&9Ä|Â>Ã¼úLB¦DÄRL¡‹ÃdºˆB7S<Ä¨]Â@•B5Y Â@zÁŸ³ôAÐmœÂ‚¡NSÃŠ©Bá_@ÄPÀL’ÃÒ:ŠB½}:Äf^Ã€Ã†§ÙB²¡>ÄN4—Ãe/ BþŠ<Ä€žLÃü‡NB¾&CÄ
+ì DU¢XD´×³C   z:  €?            8  €?            4  €?            2  €?            <  €?            0  €?            .  €?            @  €?            ,  €?            (  €?            $  €?            "  €?              €?              €?            6  €?              €?            >  €?              €?              €?            B  €?              €?            „’=d?¯g•¼Á=göæ>x’=d?¯g•¼Á=göæ>D  €?            v’=d?¯g•¼Á=göæ>t’=d?¯g•¼Á=göæ>r’=d?¯g•¼Á=göæ>z’=d?¯g•¼Á=göæ>p’=d?¯g•¼Á=göæ>F  €?               €?            n’=d?¯g•¼Á=göæ>h’=d?¯g•¼Á=göæ>`’=d?¯g•¼Á=göæ>&  €?            j’=d?¯g•¼Á=göæ>b’=d?¯g•¼Á=göæ>^’=d?¯g•¼Á=göæ>  €?            d’=d?¯g•¼Á=göæ>\’=d?¯g•¼Á=göæ>  €?            Z’=d?¯g•¼Á=göæ>X’=d?¯g•¼Á=göæ>ˆ’=d?¯g•¼Á=göæ>V’=d?¯g•¼Á=göæ>†’=d?¯g•¼Á=göæ>*  €?            l’=d?¯g•¼Á=göæ>~’=d?¯g•¼Á=göæ>T’=d?¯g•¼Á=göæ>|’=d?¯g•¼Á=göæ>R’=d?¯g•¼Á=göæ>  €?              €?            ‚’=d?¯g•¼Á=göæ>P’=d?¯g•¼Á=göæ>f’=d?¯g•¼Á=göæ>N’=d?¯g•¼Á=göæ>€’=d?¯g•¼Á=göæ>
+ü
+?÷†õ>à+?ÆK2¾       t¤©¿d9jÎE¿´Ì‡³®  t¤©¿d9jÎE¿´Ì‡³®

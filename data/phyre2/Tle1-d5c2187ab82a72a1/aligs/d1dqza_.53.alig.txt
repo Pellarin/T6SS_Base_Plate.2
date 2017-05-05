@@ -1,0 +1,14 @@
+53 d1dqza_ Probab=18.66   E-value=85  Score=12.95  Aligned_columns=38  Identities=16%
+
+Q ss_pred             HHHHHHHHHHHHCCCCCCCCEEEEEEEEEECCCCHHHHHHHH
+Q ss_conf             999999888753012458720248999861164078999999
+Q ffff_____       166 ERITQALSEFMGFNLSPDFCIAKIQFDVFGFSRGAAAARHFA  207 (566)
+Q Consensus       166 ~~L~~~l~~~~~q~~~~~~~I~~i~ldVFGFSRGAa~AR~Fv  207 (566)
+                      ..|.+.+.+.+..+..    +..-.+.|.|||-|++.|=.++
+T Consensus        95 ~~i~~el~p~i~~~~~----~d~~~~~i~G~S~GG~~Al~~a  132 (280)
+T d1dqza_          95 TFLTREMPAWLQANKG----VSPTGNAAVGLSMSGGSALILA  132 (280)
+T ss_dssp             HHHHTHHHHHHHHHHC----CCSSSCEEEEETHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHCC----CCCCCEEEEEECHHHHHHHHHH
+T ss_conf             9999999999997459----7888669998616899999999
+
+

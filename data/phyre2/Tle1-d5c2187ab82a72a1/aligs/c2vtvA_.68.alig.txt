@@ -1,0 +1,14 @@
+68 c2vtvA_ Probab=15.90   E-value=1e+02  Score=12.54  Aligned_columns=37  Identities=14%
+
+Q ss_pred             HHHHHHHHHHHHHCCCCCCCCEEEEEEEEEECCCCHHHHHHHHH
+Q ss_conf             99999998887530124587202489998611640789999999
+Q ffff_____       165 MERITQALSEFMGFNLSPDFCIAKIQFDVFGFSRGAAAARHFAN  208 (566)
+Q Consensus       165 ~~~L~~~l~~~~~q~~~~~~~I~~i~ldVFGFSRGAa~AR~Fvn  208 (566)
+                      .+.|.+.+..++..-..++       +||.|.|.|...||.-+.
+T Consensus       111 ~~~Ir~FIEaVLayTGAsK-------VDIVGHSMGvtLAr~aI~  147 (340)
+T c2vtvA_         111 YAIIKTFIDKVKAYTGKSQ-------VDIVAHSMGVSMSLATLQ  147 (340)
+T ss_dssp             HHHHHHHHHHHHHHHTCSC-------EEEEEETHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHCCCCC-------EEEEEECCCHHHHHHHHH
+T ss_conf             9999999999998609884-------369874352289999986
+
+

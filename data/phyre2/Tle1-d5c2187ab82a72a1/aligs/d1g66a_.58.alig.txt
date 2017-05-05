@@ -1,0 +1,14 @@
+58 d1g66a_ Probab=17.52   E-value=91  Score=12.78  Aligned_columns=40  Identities=18%
+
+Q ss_pred             HHHHHHHHHHHHHHHHHCCCCCCCCEEEEEEEEEECCCCHHHHHHHH
+Q ss_conf             99999999999888753012458720248999861164078999999
+Q ffff_____       161 TDEAMERITQALSEFMGFNLSPDFCIAKIQFDVFGFSRGAAAARHFA  207 (566)
+Q Consensus       161 v~~a~~~L~~~l~~~~~q~~~~~~~I~~i~ldVFGFSRGAa~AR~Fv  207 (566)
+                      +.++...+.+.+.....+--..+       |-+.|||.||.-+...+
+T Consensus        61 v~~G~~~~~~~i~~~a~~CP~tk-------ivl~GYSQGA~V~~~~l  100 (207)
+T d1g66a_          61 VAQGIAAVASAVNSFNSQCPSTK-------IVLVGYSQGGEIMDVAL  100 (207)
+T ss_dssp             HHHHHHHHHHHHHHHHHHSTTCE-------EEEEEETHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHCCCCE-------EEEEEECCHHHHHHHHH
+T ss_conf             99999999999999997389972-------99998333379999875
+
+

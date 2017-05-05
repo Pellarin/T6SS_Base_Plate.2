@@ -1,0 +1,14 @@
+85 d1cuka3 Probab=12.72   E-value=1.2e+02  Score=12.02  Aligned_columns=12  Identities=17%
+
+Q ss_pred             EEEEEEEEEECC
+Q ss_conf             024899986116
+Q ffff_____       186 IAKIQFDVFGFS  197 (566)
+Q Consensus       186 I~~i~ldVFGFS  197 (566)
+                      ++...+.+||||
+T Consensus        53 vrEd~~~LyGFs   64 (64)
+T d1cuka3          53 VREDAQLLYGFN   64 (64)
+T ss_dssp             EETTEEEEEEEC
+T ss_pred             EECCCCEEECCC
+T ss_conf             960841321329
+
+

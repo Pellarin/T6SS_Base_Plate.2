@@ -1,0 +1,14 @@
+57 d1lgya_ Probab=17.54   E-value=91  Score=12.79  Aligned_columns=50  Identities=16%
+
+Q ss_pred             HHHHHHHHHHHHHHHHHHHHHHCCCCCCCCEEEEEEEEEECCCCHHHHHHHHHHHHH
+Q ss_conf             047789999999999988875301245872024899986116407899999999960
+Q ffff_____       156 GVVTKTDEAMERITQALSEFMGFNLSPDFCIAKIQFDVFGFSRGAAAARHFANRVME  212 (566)
+Q Consensus       156 Gv~~kv~~a~~~L~~~l~~~~~q~~~~~~~I~~i~ldVFGFSRGAa~AR~Fvn~i~~  212 (566)
+                      |...-......++.+.+++.+.+.       ..-+|-+-|-|.|+|.|--++-.|..
+T Consensus       107 Gf~~~~~~~~~~~~~~i~~~~~~~-------~~~~i~~TGHSLGGalA~l~a~~l~~  156 (265)
+T d1lgya_         107 GFLSSYEQVVNDYFPVVQEQLTAH-------PTYKVIVTGHSLGGAQALLAGMDLYQ  156 (265)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHHHHC-------TTCEEEEEEETHHHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHHC-------CCCEEEEEEEHHHHHHHHHHHHHHHH
+T ss_conf             089999999998899999999746-------98618998400011789999999997
+
+

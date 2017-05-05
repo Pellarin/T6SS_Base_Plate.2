@@ -1,0 +1,14 @@
+67 c3nuzF_ Probab=15.91   E-value=99  Score=12.54  Aligned_columns=24  Identities=29%
+
+Q ss_pred             CCCCCCEEEEEEEEEECCCCHHHH
+Q ss_conf             245872024899986116407899
+Q ffff_____       180 LSPDFCIAKIQFDVFGFSRGAAAA  203 (566)
+Q Consensus       180 ~~~~~~I~~i~ldVFGFSRGAa~A  203 (566)
+                      +...+.+..-+|-+.|+|.|+..|
+T Consensus       212 l~~~~~vd~~ri~~~G~S~gg~~~  235 (386)
+T c3nuzF_         212 XKTQKHIRKDRIVVSGFSLGTEPX  235 (386)
+T ss_dssp             HTTCTTEEEEEEEEEEEGGGHHHH
+T ss_pred             HHHCCCCCCCEEEEEEECCCCCHH
+T ss_conf             452877581209999864883112
+
+

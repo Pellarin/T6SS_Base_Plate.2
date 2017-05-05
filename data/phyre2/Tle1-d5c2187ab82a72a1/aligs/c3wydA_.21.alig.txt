@@ -1,0 +1,14 @@
+21 c3wydA_ Probab=33.33   E-value=45  Score=14.63  Aligned_columns=35  Identities=14%
+
+Q ss_pred             HHHHHHHHHHHHHHHHHCCCCCCCCEEEEEEEEEECCCCHHHHHHHH
+Q ss_conf             99999999999888753012458720248999861164078999999
+Q ffff_____       161 TDEAMERITQALSEFMGFNLSPDFCIAKIQFDVFGFSRGAAAARHFA  207 (566)
+Q Consensus       161 v~~a~~~L~~~l~~~~~q~~~~~~~I~~i~ldVFGFSRGAa~AR~Fv  207 (566)
+                      +.+++..|.+...            |..-++.|+|+|-|++.|=.++
+T Consensus        66 ~~~~l~~l~~~~~------------id~~~i~i~G~S~Gg~~a~~~~  100 (193)
+T c3wydA_          66 VMDVIAEVRRDYK------------IDPDRIYMTGHSMGGYGTWSIA  100 (193)
+T ss_dssp             HHHHHHHHHHHSC------------EEEEEEEEEEETHHHHHHHHHH
+T ss_pred             HHHHHHHHHHCCC------------CCCCCEEEEECCCHHHHHHHHH
+T ss_conf             9999999986138------------6863101023324369999999
+
+

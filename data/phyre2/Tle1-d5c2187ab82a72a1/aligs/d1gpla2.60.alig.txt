@@ -1,0 +1,14 @@
+60 d1gpla2 Probab=16.92   E-value=94  Score=12.70  Aligned_columns=52  Identities=13%
+
+Q ss_pred             CCHHHHHHHHHHHHHHHHHHHHHHCCCCCCCCEEEEEEEEEECCCCHHHHHHHHHHH
+Q ss_conf             100477899999999999888753012458720248999861164078999999999
+Q ffff_____       154 FEGVVTKTDEAMERITQALSEFMGFNLSPDFCIAKIQFDVFGFSRGAAAARHFANRV  210 (566)
+Q Consensus       154 ~tGv~~kv~~a~~~L~~~l~~~~~q~~~~~~~I~~i~ldVFGFSRGAa~AR~Fvn~i  210 (566)
+                      +......++..-++|++.+..+..+..     +.--+|.+.|||-||-.|=.+...+
+T Consensus       116 Y~~a~~n~~~vg~~ia~~i~~L~~~~g-----~~~~~ihLIGhSLGAhVAG~ag~~~  167 (320)
+T d1gpla2         116 YSQASQNIRVVGAEVAYLVQVLSTSLN-----YAPENVHIIGHSLGAHTAGEAGKRL  167 (320)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHHHHHHHC-----CCGGGEEEEEETHHHHHHHHHHHTT
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHHHHCC-----CCHHHEEEEEECHHHHHHHHHHHHC
+T ss_conf             334553499999999999999997439-----9876768998637889999998643
+
+

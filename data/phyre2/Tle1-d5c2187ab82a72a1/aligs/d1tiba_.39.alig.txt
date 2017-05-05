@@ -1,0 +1,14 @@
+39 d1tiba_ Probab=21.71   E-value=73  Score=13.35  Aligned_columns=48  Identities=15%
+
+Q ss_pred             HHHHHHHHHHHHHHHHHHHHHHCCCCCCCCEEEEEEEEEECCCCHHHHHHHHHHH
+Q ss_conf             0477899999999999888753012458720248999861164078999999999
+Q ffff_____       156 GVVTKTDEAMERITQALSEFMGFNLSPDFCIAKIQFDVFGFSRGAAAARHFANRV  210 (566)
+Q Consensus       156 Gv~~kv~~a~~~L~~~l~~~~~q~~~~~~~I~~i~ldVFGFSRGAa~AR~Fvn~i  210 (566)
+                      |...-.....+++.+.+++.+.+.       ...+|-|-|-|.|||.|=-++-.|
+T Consensus       112 GF~~~~~~~~~~i~~~i~~~~~~~-------~~~~i~vtGHSLGgalA~l~a~~l  159 (269)
+T d1tiba_         112 GFTSSWRSVADTLRQKVEDAVREH-------PDYRVVFTGHSLGGALATVAGADL  159 (269)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHHHHC-------TTSEEEEEEETHHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHHC-------CCCEEEEECCCHHHHHHHHHHHHH
+T ss_conf             489999999999999999999857-------996499970463789999999999
+
+

@@ -1,0 +1,14 @@
+37 c2czqB_ Probab=22.26   E-value=71  Score=13.41  Aligned_columns=21  Identities=29%
+
+Q ss_pred             EEEEEECCCCHHHHHHHHHHH
+Q ss_conf             999861164078999999999
+Q ffff_____       190 QFDVFGFSRGAAAARHFANRV  210 (566)
+Q Consensus       190 ~ldVFGFSRGAa~AR~Fvn~i  210 (566)
+                      +|-+.|||.||..+...+..+
+T Consensus        78 kivl~GYSQGA~V~~~~l~~~   98 (205)
+T c2czqB_          78 CYILQGYSQGAAATVVALQQL   98 (205)
+T ss_dssp             EEEEEEETHHHHHHHHHHHHH
+T ss_pred             EEEEEEECCHHHHHHHHHHCC
+T ss_conf             399986131589999875116
+
+

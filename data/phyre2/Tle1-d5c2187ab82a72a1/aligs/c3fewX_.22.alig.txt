@@ -1,0 +1,14 @@
+22 c3fewX_ Probab=32.20   E-value=22  Score=16.50  Aligned_columns=20  Identities=45%
+
+Q ss_pred             CCCCCCCCCCCCCCCCCCCCCCCC
+Q ss_conf             673345788877322331000100
+Q ffff_____       307 PGAHSDIGGGYNPVGSPLQENESL  330 (566)
+Q Consensus       307 PG~HSDIGGGY~p~~~~~~e~E~~  330 (566)
+                      ||-.|||-|||-|    .+.++.+
+T Consensus        30 ~~~~~~~~~~~~~----~~~~~~~   49 (433)
+T c3fewX_          30 AGGNSDVQGGYIP----ENPNDEV   49 (433)
+T ss_dssp             TTSCCCTTCEECC----SSTTSHH
+T ss_pred             CCCCCCCCCCCCC----CCCCHHH
+T ss_conf             8866555556278----9873588
+
+

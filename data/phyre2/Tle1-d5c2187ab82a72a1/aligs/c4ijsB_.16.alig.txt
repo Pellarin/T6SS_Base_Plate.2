@@ -1,0 +1,38 @@
+16 c4ijsB_ Probab=46.18   E-value=28  Score=15.86  Aligned_columns=117  Identities=13%
+
+Q ss_pred             EEEECCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCHHHHHHHHHHHHHHHHHH
+Q ss_conf             798267334578887732233100010000544322333567056778659999999998
+Q ffff_____       303 ELALPGAHSDIGGGYNPVGSPLQENESLFLSCPEFEIVSDDTREMDTRVYRKAEQVRKML  362 (566)
+Q Consensus       303 Ev~fPG~HSDIGGGY~p~~~~~~e~E~~ll~~p~~~~v~~~~~~~~t~~y~~~~~~~~~~  362 (566)
+                      |..|--+-++.+-.|.|        |.-++..-.......+-+..+-..-...+++....
+T Consensus         2 d~~F~Dv~~~~~~~F~P--------e~~Y~~F~~~~~~~L~~~~IriFfLna~kaK~~l~   53 (232)
+T c4ijsB_           2 ELEFHDVAANTSSTFDP--------EVAYANFKRVHTTGLSYDHIRIFYIKGREIKTSLA   53 (232)
+T ss_dssp             CCCCCCCCCCSCCCCCH--------HHHHHHHHHHHCSSCCHHHHHHHHHHHHHHHHHHH
+T ss_pred             CEEEECCCCCCCCCCCC--------HHHHHHHHHHHCCCCCCCCEEEEEECHHHHHHHHH
+T ss_conf             15660443246788783--------58999998741223660103889970489999987
+
+
+Q ss_pred             HHCHHCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC-CCEEEEEEEEECCCCCCHHHHHHH
+Q ss_conf             42210012247331111123453344676545565-641577787512432765989999
+Q ffff_____       363 MTLPALKHILPHGKLTTKIRSIGVNNSNQRRAGVI-QKQVGAAVFFERMAVPNDWANVCL  421 (566)
+Q Consensus       363 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~r~~~~-~~rv~aa~~~~rR~V~gdlSRI~L  421 (566)
+                      ...        ...+...-..|.++-...-+.++. ......+|++ +| |+|=|+|-.|
+T Consensus        54 ~~~--------~~~v~~~fG~~~~~vvNth~P~~r~~~v~d~~LTl-HR-lSgyLAr~~l  103 (232)
+T c4ijsB_          54 KRS--------EWEVTLNLGGWKITVYNTNFPGNRNSPVPDDGLTL-HR-LSGFLARYLL  103 (232)
+T ss_dssp             HSC--------CSCEEEESSSCEEEECCTTSTTCSSCCCSSSCCCH-HH-HHHHHHHHHH
+T ss_pred             HCC--------CCEEEEEECEEEEEEEECCCCCCCCCCCCCCCEEH-HH-HHHHHHHHHH
+T ss_conf             187--------74157551469999996568886545676554003-56-6899999999
+
+
+Q ss_pred             HHHHH----------------HHHHCCCCCCC
+Q ss_conf             99999----------------99985985532
+Q ffff_____       422 RVMLD----------------AAQEAGVLFEP  437 (566)
+Q Consensus       422 rvM~~----------------~A~~aGV~f~~  437 (566)
+                      ..|.+                +|+.+||-|++
+T Consensus       104 ~~~~~~~~~~~~~vr~~iI~PlAe~~GvtW~~  135 (232)
+T c4ijsB_         104 EKMLKVSEPEKLIIKSKIINPLAEKNGITWND  135 (232)
+T ss_dssp             HHHHHSCTTHHHHHHHHCCCHHHHHTTCCGGG
+T ss_pred             HHHHCCCCCHHHHHHHHHCCHHHHHCCCCCCC
+T ss_conf             99632885269999975031134313842278
+
+

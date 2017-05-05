@@ -1,0 +1,62 @@
+2 c4m0mA_ Probab=96.71   E-value=0.0048  Score=38.75  Aligned_columns=196  Identities=23%
+
+Q ss_pred             EEEEEECCCCCCCCCHHHHHHHHHHCCHHHCCCCCCCCCCHHHHHHCCCCCCCCCHHHCC
+Q ss_conf             999851788876100034666421001110256867653313542004756543012057
+Q ffff_____        38 TIGIFFDGTGNNRENTASRLMKFNECSAARQGVNQKDAQSCEDFLKEINKNSISNGSYRG   97 (566)
+Q Consensus        38 ~IGvFFDGTgNN~~N~~~~~~~~~~~~~~~~~~~~~~~~t~~~~~~~~~~~~~g~~Sy~n   97 (566)
+                      ++-+-|=|||..++..--.+..+-..-.+...-...-+.-.|..-+...++|..+     
+T Consensus         6 tvtlsflgtgqhrekvhhiltsfhntisevnkdnptva~r~fdgpgsepksgdsk-----   60 (721)
+T c4m0mA_           6 TVTLSFLGTGQHREKVHHILTSFHNTISEVNKDNPTVAXRXFDGPGSEPKSGDSK-----   60 (721)
+T ss_dssp             EEEEEECCTTCCTTTCCSHHHHHHHHHHHHTTTCTTEEEEEECCTTCCCSSTTCS-----
+T ss_pred             EEEEEEECCCHHHHHHHHHHHHHHHHHHHHCCCCCCEEEECCCCCCCCCCCCCCC-----
+T ss_conf             7988741075038899999998766676503668730110136898888778877-----
+
+
+Q ss_pred             CHHHHHHHHHHHHHHHCCCCCCCCCEEEEEECCCCCCCCCCCCHHHHHCCCCCCCCCCHH
+Q ss_conf             203899999861221024544443124465127767666641001222044543211004
+Q ffff_____        98 YYSNIHWLNILYHPDQVLKKDQTSAQIKTYISGIGTAAGEADSVIGMGLGTSILDIFEGV  157 (566)
+Q Consensus        98 ~~TNIa~L~~lY~~~~~~~~d~~~~~~~iYveGiGT~~g~~D~~~G~g~G~g~~~~~tGv  157 (566)
+                               +-.+...-+++..+.   ++.++.|-.+  .-.+.+...+|.-.   ..|+
+T Consensus        61 ---------dpipgtyiynpkdns---kilispvisq--titnaiqkltgnla---gegi  103 (721)
+T c4m0mA_          61 ---------DPIPGTYIYNPKDNS---KILISPVISQ--TITNAIQKLTGNLA---GEGI  103 (721)
+T ss_dssp             ---------SCCTTSEEEETTTTE---EEECCHHHHH--HHHHHHHHHHSSCC---CTTH
+T ss_pred             ---------CCCCCCEEECCCCCC---EEEEHHHHHH--HHHHHHHHHHCCCH---HHHH
+T ss_conf             ---------898732243578785---2662036778--78999998521100---1248
+
+
+Q ss_pred             HHHHHHHHHHHHHHHHHHHHCCCCCCCCEEEEEEEEEECCCCHHHHHHHHHHHHHCCCHH
+Q ss_conf             778999999999998887530124587202489998611640789999999996002012
+Q ffff_____       158 VTKTDEAMERITQALSEFMGFNLSPDFCIAKIQFDVFGFSRGAAAARHFANRVMEQDPAI  217 (566)
+Q Consensus       158 ~~kv~~a~~~L~~~l~~~~~q~~~~~~~I~~i~ldVFGFSRGAa~AR~Fvn~i~~~~~~~  217 (566)
+                      ...+.+|.-.|.+.+.+        +-.-.-.++.+.||||||.+.-.-+|.|.+..++ 
+T Consensus       104 ehllfeavlylndiiek--------nggklpeTVNL~G~SRGA~TClrtAN~L~q~~~D-  154 (721)
+T c4m0mA_         104 EHLLFEAVLYLNDIIEK--------NGGKLPETVNLHGFSRGADTCXRXANLLYQLYPD-  154 (721)
+T ss_dssp             HHHHHHHHHHHHHHHHH--------TTSCCCSEEEEEEETHHHHHHHHHHHHHHHHCTT-
+T ss_pred             HHHHHHHHHHHHHHHHH--------CCCCCCCEEEEEEECCCHHHHHHHHHHHHHHCCC-
+T ss_conf             99999999998888761--------2885874045432022102476788799986144-
+
+
+Q ss_pred             HHHHHCCCCCCCCCCCCCEEEEEEEEEECHHHHHHHCCCCCCCCCCCCCCCCCCCHHHHH
+Q ss_conf             344201346665567765059998875252332111026685666545421212857987
+Q ffff_____       218 ARAIAKGLRGDFYDGKPSGEVRFLGLFDTVAAIGGISNFFDINGRSNPGVKLELRPSVAK  277 (566)
+Q Consensus       218 ~~~~~~~~~~~~~~~~~~~~I~FlGLFDTVaSvg~~~~~~~~~~~~~~~~~l~l~p~~v~  277 (566)
+                                        ++|... +-|-|..           ..+..+.+.+..|..|+
+T Consensus       155 ------------------I~VNlF-~iD~VPG-----------~~~~~~~~~~~vPPNV~  184 (721)
+T c4m0mA_         155 ------------------IKVNLF-LIDQVPG-----------PGKRDDPHSYTVPPNVE  184 (721)
+T ss_dssp             ------------------SEEEEE-EESCCCC-----------TTCTTCHHHHEECTTEE
+T ss_pred             ------------------CCEEEE-EEECCCC-----------CCCCCCCCCEECCCCHH
+T ss_conf             ------------------431499-8515889-----------86767886123178655
+
+
+Q ss_pred             HHHHHHHCCCCCCCCCC
+Q ss_conf             98876522444337688
+Q ffff_____       278 KVFQITAMNEYRYNFSL  294 (566)
+Q Consensus       278 ~~vH~vA~hE~R~~FpL  294 (566)
+                      +---.+|.||+|.-|.+
+T Consensus       185 ~~~s~LaL~Eyrpgfdp  201 (721)
+T c4m0mA_         185 HFESTLXLHEYRPGFDP  201 (721)
+T ss_dssp             EEEEEEETTCCCTTCCC
+T ss_pred             HHHHHHHHHCCCCCCCC
+T ss_conf             55655522112456786
+
+

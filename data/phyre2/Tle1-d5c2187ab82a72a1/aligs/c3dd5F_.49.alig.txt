@@ -1,0 +1,14 @@
+49 c3dd5F_ Probab=20.59   E-value=77  Score=13.20  Aligned_columns=21  Identities=19%
+
+Q ss_pred             EEEEEECCCCHHHHHHHHHHH
+Q ss_conf             999861164078999999999
+Q ffff_____       190 QFDVFGFSRGAAAARHFANRV  210 (566)
+Q Consensus       190 ~ldVFGFSRGAa~AR~Fvn~i  210 (566)
+                      +|-+.|||.||..+-..+..+
+T Consensus        98 kivL~GYSQGA~Vv~~~l~~~  118 (193)
+T c3dd5F_          98 AIVSGGYSQGTAVMAGSISGL  118 (193)
+T ss_dssp             EEEEEEETHHHHHHHHHHHTS
+T ss_pred             EEEEEEECCHHHHHHHHHCCC
+T ss_conf             399996242799998863355
+
+

@@ -1,0 +1,14 @@
+20 c3fleB_ Probab=34.19   E-value=44  Score=14.71  Aligned_columns=42  Identities=21%
+
+Q ss_pred             HHHHHHHHHHHHHHHHHCCCCCCCCEEEEEEEEEECCCCHHHHHHHHHH
+Q ss_conf             9999999999988875301245872024899986116407899999999
+Q ffff_____       161 TDEAMERITQALSEFMGFNLSPDFCIAKIQFDVFGFSRGAAAARHFANR  209 (566)
+Q Consensus       161 v~~a~~~L~~~l~~~~~q~~~~~~~I~~i~ldVFGFSRGAa~AR~Fvn~  209 (566)
+                      ++..-..|.+.+..+..+...++       +.+.|.|.|+..|..++..
+T Consensus        70 ~~~~a~~l~~~i~~l~~~~~~~~-------~~lvGhS~Gg~ia~~~a~~  111 (243)
+T c3fleB_          70 FKENAYWIKEVLSQLKSQFGIQQ-------FNFVGHSXGNXSFAFYXKN  111 (243)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHCCCE-------EEEEEETHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHCCCCE-------EEEEEECCHHHHHHHHHHH
+T ss_conf             99999999999999998639987-------9999857427999999995
+
+

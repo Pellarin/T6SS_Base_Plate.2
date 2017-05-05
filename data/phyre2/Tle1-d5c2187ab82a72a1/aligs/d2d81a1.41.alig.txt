@@ -1,0 +1,14 @@
+41 d2d81a1 Probab=21.69   E-value=73  Score=13.34  Aligned_columns=26  Identities=23%
+
+Q ss_pred             CCCCEEEEEEEEEECCCCHHHHHHHH
+Q ss_conf             58720248999861164078999999
+Q ffff_____       182 PDFCIAKIQFDVFGFSRGAAAARHFA  207 (566)
+Q Consensus       182 ~~~~I~~i~ldVFGFSRGAa~AR~Fv  207 (566)
+                      ++..|..-++.|.|+|-|++.|=.+.
+T Consensus         4 p~ygvDp~rI~VsG~SaGG~mA~ql~   29 (318)
+T d2d81a1           4 PAFNVNPNSVSVSGLASGGYMAAQLG   29 (318)
+T ss_dssp             CCCCEEEEEEEEEEETHHHHHHHHHH
+T ss_pred             HHCCCCHHHEEEEEECHHHHHHHHHH
+T ss_conf             10189836648885578899999998
+
+

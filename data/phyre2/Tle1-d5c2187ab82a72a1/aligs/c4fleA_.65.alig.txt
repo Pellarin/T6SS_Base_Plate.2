@@ -1,0 +1,14 @@
+65 c4fleA_ Probab=16.35   E-value=97  Score=12.61  Aligned_columns=38  Identities=26%
+
+Q ss_pred             HHHHHHHHHHHHHHHHHCCCCCCCCEEEEEEEEEECCCCHHHHHHHHHH
+Q ss_conf             9999999999988875301245872024899986116407899999999
+Q ffff_____       161 TDEAMERITQALSEFMGFNLSPDFCIAKIQFDVFGFSRGAAAARHFANR  209 (566)
+Q Consensus       161 v~~a~~~L~~~l~~~~~q~~~~~~~I~~i~ldVFGFSRGAa~AR~Fvn~  209 (566)
+                      .+.+.+.+...+...-.++           +.|+|+|-|+..|-.++..
+T Consensus        43 ~~~~~~~i~~~~~~~~~~~-----------i~l~G~S~Gg~~a~~~a~~   80 (195)
+T c4fleA_          43 PAEAAEXLESIVXDKAGQS-----------IGIVGSSLGGYFATWLSQR   80 (195)
+T ss_dssp             HHHHHHHHHHHHHHHTTSC-----------EEEEEETHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHCCCCE-----------EEEEEECCCHHHHHHHHHH
+T ss_conf             8999999999998469981-----------9999817607999999997
+
+

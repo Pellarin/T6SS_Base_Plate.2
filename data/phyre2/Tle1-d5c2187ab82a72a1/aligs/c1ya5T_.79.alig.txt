@@ -1,0 +1,14 @@
+79 c1ya5T_ Probab=13.79   E-value=81  Score=13.08  Aligned_columns=29  Identities=17%
+
+Q ss_pred             ECCCCCHHHHCCCCEEECCCCCCCEEEEE
+Q ss_conf             03531000101333001235788727999
+Q ffff_____        10 TDATHKTSIHNDWKVVVAKKKPARGVTLT   38 (566)
+Q Consensus        10 ~~~~~~~~~~~~~~~~~~~~~pe~~ItL~   38 (566)
+                      +|...|-+|.++|..+.++-.||.+-+|+
+T Consensus        13 en~~~REsy~AeW~dl~m~TrPE~~~tl~   41 (89)
+T c1ya5T_          13 ENSERREAFWAEWKDLTLSTRPEEGSSLH   41 (89)
+T ss_dssp             EETTTTEEEEEEEEEEEEEEECGGGSEEE
+T ss_pred             CCCCCEEEEEEEEEEEEEEECCCCCCCCH
+T ss_conf             27010002556667868741672223401
+
+

@@ -1,0 +1,14 @@
+97 c4j37A_ Probab=11.70   E-value=1.3e+02  Score=11.81  Aligned_columns=16  Identities=31%
+
+Q ss_pred             CCCCEEEEEEEEEECCCC
+Q ss_conf             788727999998517888
+Q ffff_____        30 KPARGVTLTIGIFFDGTG   47 (566)
+Q Consensus        30 ~pe~~ItL~IGvFFDGTg   47 (566)
+                      ||.+.|.|.|+  +|||+
+T Consensus         1 p~k~~~~l~i~--YdGt~   16 (299)
+T c4j37A_           1 PPKRKIVLLMA--YSGKG   16 (299)
+T ss_dssp             CCEEEEEEEEE--ECCTT
+T ss_pred             CCCEEEEEEEE--ECCCC
+T ss_conf             98606999999--75747
+
+

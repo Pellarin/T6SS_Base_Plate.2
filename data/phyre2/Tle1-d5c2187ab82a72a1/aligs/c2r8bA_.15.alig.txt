@@ -1,0 +1,14 @@
+15 c2r8bA_ Probab=46.90   E-value=28  Score=15.93  Aligned_columns=40  Identities=15%
+
+Q ss_pred             HHHHHHHHHHHHHHHHHCCCCCCCCEEEEEEEEEECCCCHHHHHHHH
+Q ss_conf             99999999999888753012458720248999861164078999999
+Q ffff_____       161 TDEAMERITQALSEFMGFNLSPDFCIAKIQFDVFGFSRGAAAARHFA  207 (566)
+Q Consensus       161 v~~a~~~L~~~l~~~~~q~~~~~~~I~~i~ldVFGFSRGAa~AR~Fv  207 (566)
+                      .+..+..+.+.+..+..+...++       +.|+|||.|++.|-.++
+T Consensus        76 ~~~~~~~~~~~i~~~~~~~~~~~-------i~i~G~S~Gg~~a~~la  115 (204)
+T c2r8bA_          76 LERATGKXADFIKANREHYQAGP-------VIGLGFSNGANILANVL  115 (204)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHTCCS-------EEEEEETHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHCCCCC-------EEEEEECCHHHHHHHHH
+T ss_conf             22218889999999998369553-------99998370348999999
+
+

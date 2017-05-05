@@ -1,0 +1,20 @@
+
+
+#!/bin/sh
+#$ -N tpic.2
+#$ -cwd
+#$ -pe openmpi.pe 64 # all the 7 cores in fillup mode, does not enforce number of servers
+# 10 minutes doing nothing on 7 cores
+
+
+
+module load boost/1.54.0-python-2.7.5-shared
+module load python/2.7.5-shared
+module load gcc/4.6.2-gmp-4.3.2-mpfr-3.1.0-mpc-0.8.2
+module load swig/2.0.4
+module load cmake/3.0.2
+module load ninja/1.3.4
+module load git/1.8.2.1
+module load hdf5/1.8.10
+module load openmpi/1.6.3/gcc-4.6.2-gmp-4.3.2-mpfr-3.1.0-mpc-0.8.2--disable-dlopen
+mpirun -np 64 /Bis/home/rpellari/imp-projects/imp-130116/imp-fast/setup_environment.sh python fit.py

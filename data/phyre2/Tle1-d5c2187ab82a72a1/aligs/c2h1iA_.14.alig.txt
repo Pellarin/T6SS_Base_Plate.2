@@ -1,0 +1,14 @@
+14 c2h1iA_ Probab=47.86   E-value=27  Score=16.02  Aligned_columns=41  Identities=17%
+
+Q ss_pred             HHHHHHHHHHHHHHHHHHHHCCCCCCCCEEEEEEEEEECCCCHHHH
+Q ss_conf             7789999999999988875301245872024899986116407899
+Q ffff_____       158 VTKTDEAMERITQALSEFMGFNLSPDFCIAKIQFDVFGFSRGAAAA  203 (566)
+Q Consensus       158 ~~kv~~a~~~L~~~l~~~~~q~~~~~~~I~~i~ldVFGFSRGAa~A  203 (566)
+                      ..........+.+.+..+..+..     |..-++.|+|||.|+..|
+T Consensus        79 ~~~~~~~~~~~~~~i~~l~~~~~-----vd~~rv~l~G~S~GG~~a  119 (212)
+T c2h1iA_          79 EEDLIFRTKELNEFLDEAAKEYK-----FDRNNIVAIGYSNGANIA  119 (212)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHHTT-----CCTTCEEEEEETHHHHHH
+T ss_pred             CHHHHHHHHHHHHHHHHHHHHHC-----CCHHCEEEEEECCCHHHH
+T ss_conf             00157579999999999998609-----994009999833612898
+
+

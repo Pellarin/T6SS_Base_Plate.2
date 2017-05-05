@@ -1,0 +1,14 @@
+77 c4js0B_ Probab=13.83   E-value=82  Score=13.04  Aligned_columns=21  Identities=33%
+
+Q ss_pred             CCCCCCCCCCCCCCCCHHHHHH
+Q ss_conf             8553223457355585789999
+Q ffff_____       433 VLFEPIRQTNTELQLPSELIFL  454 (566)
+Q Consensus       433 V~f~~i~~~~~~~~lP~eL~~i  454 (566)
+                      |.-++|+..++ +-+|.||.|.
+T Consensus         4 visdpipgakp-lpvppelapf   24 (29)
+T c4js0B_           4 VISDPIPGAKP-LPVPPELAPF   24 (29)
+T ss_dssp             CCCCCCSCCCC-CCCCGGGGGG
+T ss_pred             EECCCCCCCCC-CCCCHHHHHH
+T ss_conf             51377888888-6687012233
+
+

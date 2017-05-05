@@ -1,0 +1,14 @@
+50 c3gzbC_ Probab=20.11   E-value=47  Score=14.51  Aligned_columns=12  Identities=50%
+
+Q ss_pred             EEEECCCCCCCC
+Q ss_conf             985178887610
+Q ffff_____        40 GIFFDGTGNNRE   51 (566)
+Q Consensus        40 GvFFDGTgNN~~   51 (566)
+                      ++|||-|.|-++
+T Consensus        49 svffdktanrky   60 (154)
+T c3gzbC_          49 SIFFDKTANRKY   60 (154)
+T ss_dssp             CEEEETTTTEEE
+T ss_pred             EEEEECCCCCCC
+T ss_conf             045631356611
+
+

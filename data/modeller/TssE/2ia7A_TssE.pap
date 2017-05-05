@@ -1,0 +1,14 @@
+ _aln.pos         10        20        30        40        50        60
+2ia7A     ----AM--VL----SSAEE--DIAESIRIILGTARG-ERVMRPDFGCGIH--DRVFSVINTTTLGLIE 
+TSSE      MPRPSLYEILYGNFTGGLELNQVGEEEQVILSVLDNMQRILNTRAGSLKHLPDYGLPDITTILQGMPG 
+ _consrvd          *        *     *    **       *      *   *  *     * *   *
+
+ _aln.p   70        80        90       100       110       120       130
+2ia7A     NE------VKEALILWEPRIELLSVTASPR-EAAEGRLLIDIEYR----VR--STNTRFNLVYPFYLK 
+TSSE      TAHQLMRVLSDVLLKYEPRIKRVDVTMQEQTQPGELHYVIDAELKDAGLVRYGTTFIPEGRVLLRHLK 
+ _consrvd             *   ****    **        *    ** *      **   *      *    **
+
+ _aln.pos  140
+2ia7A     ESA---- 
+TSSE      QQRYVQT 
+ _consrvd

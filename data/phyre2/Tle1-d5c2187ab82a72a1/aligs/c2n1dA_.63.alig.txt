@@ -1,0 +1,14 @@
+63 c2n1dA_ Probab=16.44   E-value=51  Score=14.29  Aligned_columns=30  Identities=23%
+
+Q ss_pred             HHHHHHHHHHCCCCCCCCCCCCCCCCCCHH
+Q ss_conf             999999999859855322345735558578
+Q ffff_____       421 LRVMLDAAQEAGVLFEPIRQTNTELQLPSE  450 (566)
+Q Consensus       421 LrvM~~~A~~aGV~f~~i~~~~~~~~lP~e  450 (566)
+                      |+-||+++.=.-----|++-...++.||++
+T Consensus        16 L~TmYdl~aLde~E~lPFpn~e~eFsLPe~   45 (54)
+T c2n1dA_          16 LSTMYDMQALHESEILPFPNPERNFVLPEE   45 (54)
+T ss_dssp             HHHTTTTHHHHHHSCCCCCCCCCCCCCCHH
+T ss_pred             HHHHHHHHHHHHHCCCCCCCCCCCCCCCHH
+T ss_conf             997642897554057888998521248999
+
+

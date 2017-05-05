@@ -1,0 +1,14 @@
+52 c3visB_ Probab=19.48   E-value=82  Score=13.06  Aligned_columns=39  Identities=13%
+
+Q ss_pred             HHHHHHHHHHHHHHHCCCCCCCCEEEEEEEEEECCCCHHHH
+Q ss_conf             99999999988875301245872024899986116407899
+Q ffff_____       163 EAMERITQALSEFMGFNLSPDFCIAKIQFDVFGFSRGAAAA  203 (566)
+Q Consensus       163 ~a~~~L~~~l~~~~~q~~~~~~~I~~i~ldVFGFSRGAa~A  203 (566)
+                      +.+....+.+...........  |..-+|-|+|+|.|++.|
+T Consensus        98 ~~~~~~~d~l~~~~~~~~~~~--vD~~ri~v~G~S~GG~~a  136 (261)
+T c3visB_          98 RQLNAALDYMLTDASSAVRNR--IDASRLAVMGHSMGGGGT  136 (261)
+T ss_dssp             HHHHHHHHHHHHTSCHHHHTT--EEEEEEEEEEETHHHHHH
+T ss_pred             HHHHHHHHHHHHCHHHHHCCC--CCHHHEEEEEECCCHHHH
+T ss_conf             999999999842322220145--784428999706465778
+
+

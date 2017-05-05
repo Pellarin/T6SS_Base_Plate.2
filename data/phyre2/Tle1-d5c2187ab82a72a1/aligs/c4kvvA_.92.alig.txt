@@ -1,0 +1,14 @@
+92 c4kvvA_ Probab=12.00   E-value=29  Score=15.81  Aligned_columns=16  Identities=50%
+
+Q ss_pred             CCCHHHHHHHHHHHHH
+Q ss_conf             5857899999999854
+Q ffff_____       446 QLPSELIFLADKAIAQ  461 (566)
+Q Consensus       446 ~lP~eL~~i~~~~~~~  461 (566)
+                      ++..||+.|+||+++|
+T Consensus        12 aiakelkaiaekaiaq   27 (27)
+T c4kvvA_          12 AIAKELKAIAEKAIAQ   27 (27)
+T ss_dssp             HHHHHHHHHCCCTTTC
+T ss_pred             HHHHHHHHHHHHHHCC
+T ss_conf             9999999999986439
+
+

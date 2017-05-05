@@ -1,0 +1,14 @@
+98 c3rqrA_ Probab=11.51   E-value=1.3e+02  Score=11.77  Aligned_columns=24  Identities=21%
+
+Q ss_pred             CCCCCCCCCCCCCCHHHHHHHHHH
+Q ss_conf             532234573555857899999999
+Q ffff_____       435 FEPIRQTNTELQLPSELIFLADKA  458 (566)
+Q Consensus       435 f~~i~~~~~~~~lP~eL~~i~~~~  458 (566)
+                      |.|-+..-++..||+.|+.|.+++
+T Consensus         2 ~~P~pvdt~~v~lp~~le~~iekl   25 (189)
+T c3rqrA_           2 FDPRPVETLNVIIPEKLDSFINKF   25 (189)
+T ss_dssp             CCCCCCCCTTCCCCGGGHHHHHHH
+T ss_pred             CCCCCCCCCCEECCHHHHHHHHHH
+T ss_conf             879874110013387799999999
+
+

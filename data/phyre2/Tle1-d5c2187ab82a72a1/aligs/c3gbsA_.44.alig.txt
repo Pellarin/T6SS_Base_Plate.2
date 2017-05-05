@@ -1,0 +1,14 @@
+44 c3gbsA_ Probab=21.16   E-value=63  Score=13.73  Aligned_columns=21  Identities=29%
+
+Q ss_pred             EEEEEECCCCHHHHHHHHHHH
+Q ss_conf             999861164078999999999
+Q ffff_____       190 QFDVFGFSRGAAAARHFANRV  210 (566)
+Q Consensus       190 ~ldVFGFSRGAa~AR~Fvn~i  210 (566)
+                      +|-+.|||.||..+...+..|
+T Consensus        94 kivL~GYSQGA~Vv~~~~~~l  114 (187)
+T c3gbsA_          94 QIVAGGYSQGTAVMNGAIKRL  114 (187)
+T ss_dssp             EEEEEEETHHHHHHHHHHTTS
+T ss_pred             EEEEEEECCHHHHHCCCCCCC
+T ss_conf             399997231377633433556
+
+

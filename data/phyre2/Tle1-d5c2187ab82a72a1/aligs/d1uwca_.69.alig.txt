@@ -1,0 +1,14 @@
+69 d1uwca_ Probab=15.83   E-value=1e+02  Score=12.53  Aligned_columns=50  Identities=16%
+
+Q ss_pred             HHHHHHHHHHHHHHHHHHHHHHCCCCCCCCEEEEEEEEEECCCCHHHHHHHHHHHHH
+Q ss_conf             047789999999999988875301245872024899986116407899999999960
+Q ffff_____       156 GVVTKTDEAMERITQALSEFMGFNLSPDFCIAKIQFDVFGFSRGAAAARHFANRVME  212 (566)
+Q Consensus       156 Gv~~kv~~a~~~L~~~l~~~~~q~~~~~~~I~~i~ldVFGFSRGAa~AR~Fvn~i~~  212 (566)
+                      |...-.+....+|.+.+++++.+.       ..-+|.|-|-|.|+|.|=-++-.|..
+T Consensus        99 GF~~~~~~~~~~i~~~i~~~~~~~-------p~~~i~iTGHSLGGAlA~l~a~~l~~  148 (261)
+T d1uwca_          99 GYYIGWISVQDQVESLVKQQASQY-------PDYALTVTGHSLGASMAALTAAQLSA  148 (261)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHHHHS-------TTSEEEEEEETHHHHHHHHHHHHHHT
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHHHC-------CCCEEEEECCCHHHHHHHHHHHHHHH
+T ss_conf             499999999999999999999968-------99669996352689999999999983
+
+

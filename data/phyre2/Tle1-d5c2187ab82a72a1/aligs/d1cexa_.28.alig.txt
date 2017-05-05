@@ -1,0 +1,14 @@
+28 d1cexa_ Probab=28.63   E-value=54  Score=14.14  Aligned_columns=21  Identities=29%
+
+Q ss_pred             EEEEEECCCCHHHHHHHHHHH
+Q ss_conf             999861164078999999999
+Q ffff_____       190 QFDVFGFSRGAAAARHFANRV  210 (566)
+Q Consensus       190 ~ldVFGFSRGAa~AR~Fvn~i  210 (566)
+                      +|-+.|||.||..+...+..|
+T Consensus        97 kivL~GYSQGA~V~~~~l~~~  117 (197)
+T d1cexa_          97 TLIAGGYSQGAALAAASIEDL  117 (197)
+T ss_dssp             EEEEEEETHHHHHHHHHHHHS
+T ss_pred             EEEEEEECCHHHHHHHHHCCC
+T ss_conf             499997254389998762347
+
+

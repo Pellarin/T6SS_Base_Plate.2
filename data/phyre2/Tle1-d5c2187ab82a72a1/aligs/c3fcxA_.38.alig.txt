@@ -1,0 +1,14 @@
+38 c3fcxA_ Probab=22.12   E-value=72  Score=13.40  Aligned_columns=41  Identities=24%
+
+Q ss_pred             HHHHHHHHHHHHHHHCCCCCCCCEEEEEEEEEECCCCHHHHHHHH
+Q ss_conf             999999999888753012458720248999861164078999999
+Q ffff_____       163 EAMERITQALSEFMGFNLSPDFCIAKIQFDVFGFSRGAAAARHFA  207 (566)
+Q Consensus       163 ~a~~~L~~~l~~~~~q~~~~~~~I~~i~ldVFGFSRGAa~AR~Fv  207 (566)
+                      +....+.+.+.+.+..+..    +..-++.|.|||.|+..|=.++
+T Consensus       111 ~~~~~i~~el~~~i~~~~~----vd~~r~~i~G~S~GG~~a~~~a  151 (268)
+T c3fcxA_         111 RMYSYVTEELPQLINANFP----VDPQRMSIFGHSMGGHGALICA  151 (268)
+T ss_dssp             BHHHHHHTHHHHHHHHHSS----EEEEEEEEEEETHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHCCC----CCHHHEEEEEECHHHHHHHHHH
+T ss_conf             6999999989999996369----8952388866331479999999
+
+

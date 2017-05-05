@@ -1,0 +1,14 @@
+82 c4ip8B_ Probab=13.53   E-value=73  Score=13.34  Aligned_columns=15  Identities=33%
+
+Q ss_pred             HHHHHHCCCCHHHCC
+Q ss_conf             986521023701100
+Q ffff_____       484 KYTHCSANWNIESDG  498 (566)
+Q Consensus       484 ~YiH~Sa~wN~~~~~  498 (566)
+                      ||.||-+|++|...+
+T Consensus        35 kYFhc~gNy~Aa~rG   49 (105)
+T c4ip8B_          35 KYFHARGNYDAAKRG   49 (105)
+T ss_dssp             HHHHHHHHHHHHTTC
+T ss_pred             HHHHCCCCHHHHHHC
+T ss_conf             101100243887308
+
+

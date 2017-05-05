@@ -1,0 +1,14 @@
+ _aln.pos         10        20        30        40        50        60
+5iw9A     -NINKLYSDIDPEMK--MDWNKDVSRSLGLRSIKNSLLGIITTRKGSRPFDPEFGCDLSDQLFENMTP 
+TSSE      MPRPSLYEILYGNFTGGLELNQVGEEEQVILSVLDNMQRILNTRAGSLKHLPDYGLPDITTILQGM-P 
+ _consrvd      **             *          *       *  ** **    *  *          * *
+
+ _aln.p   70        80        90       100       110       120       130
+5iw9A     LTADTVERNIESAVRNYEPRIDKLAVNVIPVYDD----YTLIVEIRFSVI---DN---PD---DIEQI 
+TSSE      GTAHQLMRVLSDVLLKYEPRIKRVDVTMQEQTQPGELHYVIDAELKDAGLVRYGTTFIPEGRVLLRHL 
+ _consrvd  **    *        *****    *            *    *              *
+
+ _aln.pos  140
+5iw9A     KLQLAS-- 
+TSSE      KQQRYVQT 
+ _consrvd * *

@@ -1,0 +1,14 @@
+61 c3frrA_ Probab=16.69   E-value=95  Score=12.66  Aligned_columns=19  Identities=26%
+
+Q ss_pred             HHHHHHHHHHHHCCCCCCC
+Q ss_conf             9999999999985985532
+Q ffff_____       419 VCLRVMLDAAQEAGVLFEP  437 (566)
+Q Consensus       419 I~LrvM~~~A~~aGV~f~~  437 (566)
+                      +-+++|.+.|++.||+|+|
+T Consensus       160 ~~~~~l~eIA~e~~i~~~p  178 (186)
+T c3frrA_         160 LVERYLIEIAKNYNVPYEP  178 (186)
+T ss_dssp             HHHHHHHHHHHHHTCCCCC
+T ss_pred             HHHHHHHHHHHHCCCCCCC
+T ss_conf             9999999999982899898
+
+

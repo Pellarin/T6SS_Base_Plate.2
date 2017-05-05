@@ -1,0 +1,14 @@
+87 d1yl7a1 Probab=12.40   E-value=1.2e+02  Score=11.94  Aligned_columns=46  Identities=17%
+
+Q ss_pred             CCCCCHHHHHHHHHHHHHHHHHHCCCCCCCCCHHHHHHHHHHHHHHCC
+Q ss_conf             555857899999999854767632678778988999999998652102
+Q ffff_____       444 ELQLPSELIFLADKAIAQGKAVRLGQEPQAFTEEELYIIGKYTHCSAN  491 (566)
+Q Consensus       444 ~~~lP~eL~~i~~~~~~~~~~~~~G~~~~~~~~~e~~ll~~YiH~Sa~  491 (566)
+                      ++..|+-+..+.+.+.+.+.....|..  +++++++..|+.++-.|.+
+T Consensus        50 DFS~p~~~~~~~~~a~~~g~~lViGTT--G~~~~~~~~l~~~~~~a~~   95 (135)
+T d1yl7a1          50 DFTHPDVVMGNLEFLIDNGIHAVVGTT--GFTAERFQQVESWLVAKPN   95 (135)
+T ss_dssp             ECCCTTTHHHHHHHHHHTTCEEEECCC--CCCHHHHHHHHHHHHSCTT
+T ss_pred             ECCCHHHHHHHHHHHHHCCCCEEEECC--CCCHHHHHHHHHHHHHHCC
+T ss_conf             859979999999999976996999859--9998999999999963019
+
+

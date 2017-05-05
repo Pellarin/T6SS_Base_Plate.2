@@ -1,0 +1,14 @@
+70 c4idxA_ Probab=15.27   E-value=70  Score=13.46  Aligned_columns=31  Identities=13%
+
+Q ss_pred             EEEEECCCCCCHHHHHHHHHHHH----------------HHHHCCCCCCC
+Q ss_conf             78751243276598999999999----------------99985985532
+Q ffff_____       404 AVFFERMAVPNDWANVCLRVMLD----------------AAQEAGVLFEP  437 (566)
+Q Consensus       404 a~~~~rR~V~gdlSRI~LrvM~~----------------~A~~aGV~f~~  437 (566)
+                      +|++ +| |+|=|+|-.|. ++.                +|+.+||-|++
+T Consensus        80 ~LTl-HR-~SgyLAR~~l~-~~~~~~~~~~~~~~~iI~PlAE~~GvtW~~  126 (218)
+T c4idxA_          80 AITL-HR-MSGYLARWIAD-TCKASVLKLAEASAQIVMPLAEVKGCTWAD  126 (218)
+T ss_dssp             SCBH-HH-HHHHHHHHHHH-HHTTCSTTHHHHHHSCCCHHHHTTCCCGGG
+T ss_pred             CEEH-HH-HHHHHHHHHHH-HHCCCCHHHHHHHHHHCCHHHHHCCCCCCC
+T ss_conf             5021-46-58999999999-711686247888886220134413833178
+
+

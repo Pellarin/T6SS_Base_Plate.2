@@ -1,0 +1,14 @@
+30 c4kvvL_ Probab=27.78   E-value=12  Score=18.22  Aligned_columns=17  Identities=53%
+
+Q ss_pred             CCCHHHHHHHHHHHHHH
+Q ss_conf             58578999999998547
+Q ffff_____       446 QLPSELIFLADKAIAQG  462 (566)
+Q Consensus       446 ~lP~eL~~i~~~~~~~~  462 (566)
+                      ++..||+.|+||+++||
+T Consensus        12 aiakelkaiaekaiaqg   28 (28)
+T c4kvvL_          12 AIAKELKAIAEKAIAQG   28 (28)
+T ss_dssp             HHHHHHHHHCCCHHHHC
+T ss_pred             HHHHHHHHHHHHHHHCC
+T ss_conf             99999999999875379
+
+

@@ -1,0 +1,14 @@
+81 c3ds8A_ Probab=13.61   E-value=1.1e+02  Score=12.16  Aligned_columns=42  Identities=21%
+
+Q ss_pred             HHHHHHHHHHHHHHHHHCCCCCCCCEEEEEEEEEECCCCHHHHHHHHHH
+Q ss_conf             9999999999988875301245872024899986116407899999999
+Q ffff_____       161 TDEAMERITQALSEFMGFNLSPDFCIAKIQFDVFGFSRGAAAARHFANR  209 (566)
+Q Consensus       161 v~~a~~~L~~~l~~~~~q~~~~~~~I~~i~ldVFGFSRGAa~AR~Fvn~  209 (566)
+                      +++--+.|.+.++.+..+....+       +++.|.|.|...||.++..
+T Consensus        72 ~~~~a~~L~~~i~~l~~~~g~~~-------~~lVgHSmGGlia~~~~~~  113 (253)
+T c3ds8A_          72 PDDWSKWLKIAXEDLKSRYGFTQ-------XDGVGHSNGGLALTYYAED  113 (253)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHCCSE-------EEEEEETHHHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHCCCCC-------CEEEEECHHHHHHHHHHHH
+T ss_conf             99999999999999999739995-------0799864378999999996
+
+

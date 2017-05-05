@@ -1,0 +1,14 @@
+47 d1ispa_ Probab=20.80   E-value=77  Score=13.23  Aligned_columns=39  Identities=13%
+
+Q ss_pred             HHHHHHHHHHHHHHHHCCCCCCCCEEEEEEEEEECCCCHHHHHHHH
+Q ss_conf             9999999999888753012458720248999861164078999999
+Q ffff_____       162 DEAMERITQALSEFMGFNLSPDFCIAKIQFDVFGFSRGAAAARHFA  207 (566)
+Q Consensus       162 ~~a~~~L~~~l~~~~~q~~~~~~~I~~i~ldVFGFSRGAa~AR~Fv  207 (566)
+                      +......++.+..++.......       ++++|+|.|+..||.++
+T Consensus        48 ~~~~~~~a~~i~~~~~~~~~~~-------~~lvGhSmGg~ia~~~~   86 (179)
+T d1ispa_          48 YNNGPVLSRFVQKVLDETGAKK-------VDIVAHSMGGANTLYYI   86 (179)
+T ss_dssp             HHHHHHHHHHHHHHHHHHCCSC-------EEEEEETHHHHHHHHHH
+T ss_pred             CCCHHHHHHHHHHHHHHCCCCE-------EEEEECCCCHHHHHHHH
+T ss_conf             4456889999999999708973-------99996486079999999
+
+

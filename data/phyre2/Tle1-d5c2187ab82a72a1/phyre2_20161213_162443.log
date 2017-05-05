@@ -1,0 +1,82 @@
+13/12/2016 16:24:43 : INFO  : Run start: Tue Dec 13 16:24:43 GMT 2016
+13/12/2016 16:24:43 : INFO  : Initialised job
+13/12/2016 16:24:43 : INFO  : Initialised job:
+Sequence
+>ffff_____
+MTKYQGYDVTDATHKTSIHNDWKVVVAKKKPARGVTLTIGIFFDGTGNNRENTASRLMKF
+NECSAARQGVNQKDAQSCEDFLKEINKNSISNGSYRGYYSNIHWLNILYHPDQVLKKDQT
+SAQIKTYISGIGTAAGEADSVIGMGLGTSILDIFEGVVTKTDEAMERITQALSEFMGFNL
+SPDFCIAKIQFDVFGFSRGAAAARHFANRVMEQDPAIARAIAKGLRGDFYDGKPSGEVRF
+LGLFDTVAAIGGISNFFDINGRSNPGVKLELRPSVAKKVFQITAMNEYRYNFSLNSIKGM
+WPELALPGAHSDIGGGYNPVGSPLQENESLFLSCPEFEIVSDDTREMDTRVYRKAEQVRK
+MLMTLPALKHILPHGKLTTKIRSIGVNNSNQRRAGVIQKQVGAAVFFERMAVPNDWANVC
+LRVMLDAAQEAGVLFEPIRQTNTELQLPSELIFLADKAIAQGKAVRLGQEPQAFTEEELY
+IIGKYTHCSANWNIESDGNLWVDPTTGEIFIHRFGPKGNKAFVFPNKPNDRWIRSVWYMD
+DQQRLNDNAVKNTKVMMSGVHHHHHH
+
+13/12/2016 16:24:43 : INFO  : Checked sequence
+13/12/2016 16:24:43 : INFO  : Finding homologues with PSI-BLAST
+13/12/2016 16:24:43 : INFO  : PSI-BLAST 3 iterations
+13/12/2016 16:28:02 : INFO  : PSI-BLAST 5 iterations
+13/12/2016 16:30:28 : INFO  : Finished PSI-BLAST
+13/12/2016 16:30:28 : INFO  : Running Buildali to generate a3m file
+13/12/2016 16:38:41 : INFO  : Converting to HMM
+13/12/2016 16:38:42 : INFO  : Calibrating HMM
+13/12/2016 16:39:05 : INFO  : Searching HMM database
+13/12/2016 16:59:18 : INFO  : Finished buildali
+13/12/2016 16:59:18 : INFO  : Predicting secondary structure
+13/12/2016 16:59:19 : INFO  : Predicted secondary structure (PSI-Pred)
+13/12/2016 16:59:19 : INFO  : Predicting Disordered regions
+13/12/2016 16:59:19 : INFO  : Predicted Disorder (Disopred)
+13/12/2016 16:59:19 : INFO  : Running memsat_svm check
+13/12/2016 16:59:20 : INFO  : Exitval for mkdir: 
+13/12/2016 17:01:05 : INFO  : Globular protein
+13/12/2016 17:01:05 : INFO  : Predicted Transmembrane (memsat_svm) ID 'd5c2187ab82a72a1'
+13/12/2016 17:01:05 : INFO  : Initialising fold library search
+13/12/2016 17:01:05 : INFO  : Initialised search input
+13/12/2016 17:01:05 : INFO  : Building Ensemble models
+13/12/2016 17:01:05 : INFO  : Building c4o5pB_.1.pdb
+13/12/2016 17:01:07 : INFO  : Building c4m0mA_.2.pdb
+13/12/2016 17:01:08 : INFO  : Building d1ei9a_.3.pdb
+13/12/2016 17:01:10 : INFO  : Building c2vsqA_.4.pdb
+13/12/2016 17:01:11 : INFO  : Building c3og9A_.5.pdb
+13/12/2016 17:01:12 : INFO  : Building d2h1ia1.6.pdb
+13/12/2016 17:01:13 : INFO  : Building c5f2hA_.7.pdb
+13/12/2016 17:01:14 : INFO  : Building c3ajaA_.8.pdb
+13/12/2016 17:01:15 : INFO  : Building c2cbgA_.9.pdb
+13/12/2016 17:01:16 : INFO  : Building c4zxiA_.10.pdb
+13/12/2016 17:01:17 : INFO  : Building d1jmkc_.11.pdb
+13/12/2016 17:01:17 : INFO  : Building d3b5ea1.12.pdb
+13/12/2016 17:01:18 : INFO  : Building c2zyiB_.13.pdb
+13/12/2016 17:01:19 : INFO  : Building c2h1iA_.14.pdb
+13/12/2016 17:01:20 : INFO  : Building c2r8bA_.15.pdb
+13/12/2016 17:01:20 : INFO  : Building c4ijsB_.16.pdb
+13/12/2016 17:01:21 : INFO  : Building c3lp5A_.17.pdb
+13/12/2016 17:01:22 : INFO  : Building d2r8ba1.18.pdb
+13/12/2016 17:01:22 : INFO  : Building c2jbwB_.19.pdb
+13/12/2016 17:01:23 : INFO  : Building c3fleB_.20.pdb
+13/12/2016 17:01:24 : INFO  : 
+13/12/2016 17:01:24 : WARN  : Set python to /bmm/www/servers/phyre2/bin//python2.7/2.7.2/bin/python2.7
+13/12/2016 17:19:01 : WARN  : Failed to run assembler on model
+13/12/2016 17:19:01 : WARN  : Failed to run assembler on model
+13/12/2016 17:19:02 : WARN  : Failed to run assembler on model
+13/12/2016 17:19:03 : WARN  : Failed to run assembler on model
+13/12/2016 17:19:04 : WARN  : Failed to run assembler on model
+13/12/2016 17:19:04 : WARN  : Failed to run assembler on model
+13/12/2016 17:19:04 : WARN  : Failed to run assembler on model
+13/12/2016 17:19:04 : WARN  : Failed to add sidechains, using backbone only
+13/12/2016 17:19:04 : WARN  : Failed to run assembler on model
+13/12/2016 17:19:05 : WARN  : Failed to run assembler on model
+13/12/2016 17:19:05 : WARN  : Failed to run assembler on model
+13/12/2016 17:19:05 : WARN  : Failed to run assembler on model
+13/12/2016 17:19:05 : WARN  : Failed to run assembler on model
+13/12/2016 17:19:06 : WARN  : Failed to run assembler on model
+13/12/2016 17:19:06 : WARN  : Failed to run assembler on model
+13/12/2016 17:19:06 : WARN  : Failed to run assembler on model
+13/12/2016 17:19:06 : WARN  : Failed to run assembler on model
+13/12/2016 17:19:07 : WARN  : Failed to run assembler on model
+13/12/2016 17:19:07 : WARN  : Failed to run assembler on model
+13/12/2016 17:19:07 : WARN  : Failed to run assembler on model
+13/12/2016 17:19:07 : WARN  : Failed to run assembler on model
+13/12/2016 17:19:08 : WARN  : Failed to run assembler on model
+13/12/2016 17:19:08 : INFO  : Run end  : Tue Dec 13 17:19:08 GMT 2016

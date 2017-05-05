@@ -1,0 +1,26 @@
+10 c4zxiA_ Probab=53.72   E-value=22  Score=16.58  Aligned_columns=55  Identities=18%
+
+Q ss_pred             HHHHHHHHHHHHHCCCCCCCCEEEEEEEEEECCCCHHHHHHHHHHHHHCCCHHHHHHHCC
+Q ss_conf             999999988875301245872024899986116407899999999960020123442013
+Q ffff_____       165 MERITQALSEFMGFNLSPDFCIAKIQFDVFGFSRGAAAARHFANRVMEQDPAIARAIAKG  224 (566)
+Q Consensus       165 ~~~L~~~l~~~~~q~~~~~~~I~~i~ldVFGFSRGAa~AR~Fvn~i~~~~~~~~~~~~~~  224 (566)
+                      ++.+++.+.+.+.+....++.+      +.|+|=|+..|-..+.+|..+           
+T Consensus      1105 ~~~la~~y~~~i~~~~~~gp~~------l~G~S~Gg~iA~e~A~~L~~~----------- 1147 (1315)
+T c4zxiA_        1105 IEEMATLYIAEMQKMQPQGPYF------LGGWCFGGAIAYEISRQLRQM----------- 1147 (1315)
+T ss_dssp             HHHHHHHHHHHHHTTCCSSCEE------EEEETHHHHHHHHHHHHHHHT-----------
+T ss_pred             HHHHHHHHHHHHHHHCCCCCEE------EEEECHHHHHHHHHHHHHHHC-----------
+T ss_conf             8999999999999968999889------995372779999999999988-----------
+
+
+Q ss_pred             CCCCCCCCCCCEEEEEEEEEEC
+Q ss_conf             4666556776505999887525
+Q ffff_____       225 LRGDFYDGKPSGEVRFLGLFDT  246 (566)
+Q Consensus       225 ~~~~~~~~~~~~~I~FlGLFDT  246 (566)
+                                ..+|.+|+|+|+
+T Consensus      1148 ----------g~~v~~l~llD~ 1159 (1315)
+T c4zxiA_        1148 ----------GQQVTGIVMIDT 1159 (1315)
+T ss_dssp             ----------TCCEEEEEEESC
+T ss_pred             ----------CCCCCEEEEECC
+T ss_conf             ----------898878999838
+
+

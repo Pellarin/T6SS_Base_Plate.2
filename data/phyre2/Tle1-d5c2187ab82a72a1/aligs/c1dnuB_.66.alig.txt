@@ -1,0 +1,14 @@
+66 c1dnuB_ Probab=15.91   E-value=75  Score=13.29  Aligned_columns=30  Identities=13%
+
+Q ss_pred             ECCCCCCCCCHHHHHHHHHHCCHHHCCCCC
+Q ss_conf             178887610003466642100111025686
+Q ffff_____        43 FDGTGNNRENTASRLMKFNECSAARQGVNQ   72 (566)
+Q Consensus        43 FDGTgNN~~N~~~~~~~~~~~~~~~~~~~~   72 (566)
+                      +||+.||..|-.-+.......+.....|.+
+T Consensus        10 ~DGscNNl~~p~~G~a~~~f~R~lp~~Y~D   39 (104)
+T c1dnuB_          10 ITGMCNNRRSPTLGASNRAFVRWLPAEYED   39 (104)
+T ss_dssp             SSCTTSSSSSTTTTCSSCCCCCSSCCCCTT
+T ss_pred             CCCCCCCCCCCCCCCCCCCHHHHCCCHHHH
+T ss_conf             865548857713287788203222801000
+
+

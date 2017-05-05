@@ -1,0 +1,15 @@
+100 d2ogqa2 Probab=11.23   E-value=1.4e+02  Score=11.71  Aligned_columns=8  Identities=63%
+
+Q ss_pred             EEE-EE-CCC
+Q ss_conf             998-51-788
+Q ffff_____        39 IGI-FF-DGT   46 (566)
+Q Consensus        39 IGv-FF-DGT   46 (566)
+                      |+| || |+|
+T Consensus        24 vqvnF~~D~t   33 (87)
+T d2ogqa2          24 VQINFFQDHT   33 (87)
+T ss_dssp             EEEEETTTCC
+T ss_pred             EEEEEECCCE
+T ss_conf             7999946972
+
+
+Done!

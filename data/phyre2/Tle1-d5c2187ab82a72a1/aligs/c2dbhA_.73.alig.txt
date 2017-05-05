@@ -1,0 +1,14 @@
+73 c2dbhA_ Probab=14.09   E-value=1.1e+02  Score=12.25  Aligned_columns=23  Identities=30%
+
+Q ss_pred             CHHHHHHHHHHHHHHHHHHCCCCCCCCCHHHHHHH
+Q ss_conf             57899999999854767632678778988999999
+Q ffff_____       448 PSELIFLADKAIAQGKAVRLGQEPQAFTEEELYII  482 (566)
+Q Consensus       448 P~eL~~i~~~~~~~~~~~~~G~~~~~~~~~e~~ll  482 (566)
+                      |-+|+||++.++--            +.|||+..|
+T Consensus        34 pcdlqpifddmlh~------------lnpeel~vi   56 (102)
+T c2dbhA_          34 PCDLQPIFDDMLHF------------LNPEELRVI   56 (102)
+T ss_dssp             CCCCSHHHHHHHHH------------SCHHHHHHH
+T ss_pred             CCCCCHHHHHHHHH------------CCHHHHHHH
+T ss_conf             00011578988963------------398796797
+
+

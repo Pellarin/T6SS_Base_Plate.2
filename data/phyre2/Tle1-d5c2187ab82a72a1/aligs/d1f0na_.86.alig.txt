@@ -1,0 +1,14 @@
+86 d1f0na_ Probab=12.63   E-value=1.2e+02  Score=11.99  Aligned_columns=39  Identities=18%
+
+Q ss_pred             HHHHHHHHHHHHHCCCCCCCCEEEEEEEEEECCCCHHHHHHHH
+Q ss_conf             9999999888753012458720248999861164078999999
+Q ffff_____       165 MERITQALSEFMGFNLSPDFCIAKIQFDVFGFSRGAAAARHFA  207 (566)
+Q Consensus       165 ~~~L~~~l~~~~~q~~~~~~~I~~i~ldVFGFSRGAa~AR~Fv  207 (566)
+                      ...+.+.+-+.+.++..    +..-.+.|+|+|.|++.|=.++
+T Consensus        97 ~~~~~~el~~~~~~~~~----vd~~~~~i~G~S~GG~~al~~a  135 (284)
+T d1f0na_          97 ETFLTSELPQWLSANRA----VKPTGSAAIGLSMAGSSAMILA  135 (284)
+T ss_dssp             HHHHHTHHHHHHHHHHC----CCSSSEEEEEETHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHCC----CCHHHEEEEEECHHHHHHHHHH
+T ss_conf             99999999999887269----7800159998644899999999
+
+

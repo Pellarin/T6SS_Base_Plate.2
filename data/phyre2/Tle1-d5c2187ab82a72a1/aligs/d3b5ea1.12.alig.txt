@@ -1,0 +1,14 @@
+12 d3b5ea1 Probab=51.51   E-value=23  Score=16.37  Aligned_columns=45  Identities=11%
+
+Q ss_pred             HHHHHHHHHHHHHHHHHHHHCCCCCCCCEEEEEEEEEECCCCHHHHHHHH
+Q ss_conf             77899999999999888753012458720248999861164078999999
+Q ffff_____       158 VTKTDEAMERITQALSEFMGFNLSPDFCIAKIQFDVFGFSRGAAAARHFA  207 (566)
+Q Consensus       158 ~~kv~~a~~~L~~~l~~~~~q~~~~~~~I~~i~ldVFGFSRGAa~AR~Fv  207 (566)
+                      ...+....+.+.+.+..+..+..     |..-++.|.|||.|++.|=.++
+T Consensus        78 ~~~~~~~~~~~~~~i~~l~~~~~-----id~~rv~i~G~S~Gg~~a~~l~  122 (209)
+T d3b5ea1          78 QKSILAETAAFAAFTNEAAKRHG-----LNLDHATFLGYSNGANLVSSLX  122 (209)
+T ss_dssp             HHHHHHHHHHHHHHHHHHHHHHT-----CCGGGEEEEEETHHHHHHHHHH
+T ss_pred             HHHHHHHHHHHHHHHHHHHHHCC-----CCHHHEEEEEECCHHHHHHHHH
+T ss_conf             43389999999999999997519-----9963299998361589999999
+
+

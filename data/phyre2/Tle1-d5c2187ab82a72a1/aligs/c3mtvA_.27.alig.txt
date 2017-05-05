@@ -1,0 +1,14 @@
+27 c3mtvA_ Probab=29.63   E-value=24  Score=16.27  Aligned_columns=31  Identities=19%
+
+Q ss_pred             HCCCCCCCCCCCCCCCC-CCHHHHHHHHHHHH
+Q ss_conf             85985532234573555-85789999999985
+Q ffff_____       430 EAGVLFEPIRQTNTELQ-LPSELIFLADKAIA  460 (566)
+Q Consensus       430 ~aGV~f~~i~~~~~~~~-lP~eL~~i~~~~~~  460 (566)
+                      +.|+.|.|.-..+..+. +|.||+.+||++++
+T Consensus        16 ~~~~~Wtp~g~n~~~~E~~p~el~r~~e~li~   47 (203)
+T c3mtvA_          16 GGKVSWAPRGGNEVKFEPVPKELKLVANRLHT   47 (203)
+T ss_dssp             TTEEEEEECCSTTCCCCBCCSSSHHHHHHHHH
+T ss_pred             CCCEEEEECCCCCCCCCCCCHHHHHHHHHHHH
+T ss_conf             88168830588742202377789999999986
+
+

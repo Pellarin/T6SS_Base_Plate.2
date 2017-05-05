@@ -1,0 +1,14 @@
+96 c3fnbB_ Probab=11.79   E-value=1.3e+02  Score=11.83  Aligned_columns=30  Identities=20%
+
+Q ss_pred             HHHHHHHHHHHHHHHHCCCCCCCCEEEEEEEEEECCCCHHHH
+Q ss_conf             999999999988875301245872024899986116407899
+Q ffff_____       162 DEAMERITQALSEFMGFNLSPDFCIAKIQFDVFGFSRGAAAA  203 (566)
+Q Consensus       162 ~~a~~~L~~~l~~~~~q~~~~~~~I~~i~ldVFGFSRGAa~A  203 (566)
+                      ++.+..+.+.+.            +..-+|.++|+|.|++.|
+T Consensus       200 ~~~i~~v~d~~~------------~d~~rI~l~G~S~GG~~a  229 (371)
+T c3fnbB_         200 RAAISAILDWYQ------------APTEKIAIAGFSGGGYFT  229 (371)
+T ss_dssp             HHHHHHHHHHCC------------CSSSCEEEEEETTHHHHH
+T ss_pred             HHHHHHHHHHHC------------CCCCEEEEEEECHHHHHH
+T ss_conf             999999985507------------890118999747589999
+
+

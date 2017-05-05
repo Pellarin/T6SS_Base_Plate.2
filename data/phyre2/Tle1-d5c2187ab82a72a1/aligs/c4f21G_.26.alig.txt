@@ -1,0 +1,14 @@
+26 c4f21G_ Probab=29.76   E-value=42  Score=14.82  Aligned_columns=18  Identities=33%
+
+Q ss_pred             EEEEEECCCCHHHHHHHH
+Q ss_conf             999861164078999999
+Q ffff_____       190 QFDVFGFSRGAAAARHFA  207 (566)
+Q Consensus       190 ~ldVFGFSRGAa~AR~Fv  207 (566)
+                      ++.++|||.|++.|=.++
+T Consensus        92 ri~l~G~S~Gg~~a~~~a  109 (204)
+T c4f21G_          92 NIILAGFSQGGIIATYTA  109 (204)
+T ss_dssp             SEEEEEETHHHHHHHHHH
+T ss_pred             HEEEEEECCCCHHHHHHH
+T ss_conf             699998557677889999
+
+

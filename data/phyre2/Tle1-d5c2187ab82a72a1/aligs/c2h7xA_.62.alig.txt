@@ -1,0 +1,26 @@
+62 c2h7xA_ Probab=16.60   E-value=96  Score=12.65  Aligned_columns=58  Identities=24%
+
+Q ss_pred             HHHHHHHHHHHHHCCCCCCCCEEEEEEEEEECCCCHHHHHHHHHHHHHCCCHHHHHHHCC
+Q ss_conf             999999988875301245872024899986116407899999999960020123442013
+Q ffff_____       165 MERITQALSEFMGFNLSPDFCIAKIQFDVFGFSRGAAAARHFANRVMEQDPAIARAIAKG  224 (566)
+Q Consensus       165 ~~~L~~~l~~~~~q~~~~~~~I~~i~ldVFGFSRGAa~AR~Fvn~i~~~~~~~~~~~~~~  224 (566)
+                      +..+++.+-..+.+.....+.+      +.|+|-|+..|-.++.++.+....        
+T Consensus       109 ~~~~a~~~~~~i~~~~~~~p~~------LvGhS~GG~iA~~~A~~l~~~~g~--------  154 (279)
+T c2h7xA_         109 LDTALDAQARAILRAAGDAPVV------LLGHSGGALLAHELAFRLERAHGA--------  154 (279)
+T ss_dssp             HHHHHHHHHHHHHHHHTTSCEE------EEEETHHHHHHHHHHHHHHHHHSC--------
+T ss_pred             HHHHHHHHHHHHHHHCCCCCEE------EEECCCHHHHHHHHHHHHHHHCCC--------
+T ss_conf             8999999999999957999748------997184779999999997985599--------
+
+
+Q ss_pred             CCCCCCCCCCCEEEEEEEEEECHH
+Q ss_conf             466655677650599988752523
+Q ffff_____       225 LRGDFYDGKPSGEVRFLGLFDTVA  248 (566)
+Q Consensus       225 ~~~~~~~~~~~~~I~FlGLFDTVa  248 (566)
+                                  .+.++.+.|+..
+T Consensus       155 ------------~v~~l~lld~~~  166 (279)
+T c2h7xA_         155 ------------PPAGIVLVDPYP  166 (279)
+T ss_dssp             ------------CCSEEEEESCCC
+T ss_pred             ------------CCEEEEECCCCC
+T ss_conf             ------------613999617899
+
+
